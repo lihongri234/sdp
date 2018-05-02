@@ -1,0 +1,9 @@
+/* pages/seting/feedback.wxss */
+textarea {
+width: 100%;
+height:400rpx;
+display:block;
+position:relative;
+
+}
+

@@ -1,0 +1,132 @@
+<!--pages/tongji/month.wxml-->
+<view class='container pb30'>
+    <view class='p30 fbc lh2'>
+        <view class='fs26 fc-1'>
+            <text class='fs24 fc-3'>2017-05  总收入：</text> 494711.80
+        </view>
+        <view class='fs26 fc-3 bl pl20' bindtap='Cheak'>按月筛选</view>
+    </view>
+    <view class='canvas_box' hidden="{{IsShowMonth}}">
+        <canvas style="width: {{width}}px; height: {{width-80}}px;" canvas-id="Canvas"></canvas>
+    </view>
+    <view class='t_box pb30'>
+        <view class='fac bc-3 lh3'>
+            <view class='fs24 fc'>日期</view>
+            <view class='fs24 fc'>已支付</view>
+            <view class='fs24 fc'>挂账</view>
+            <view class='fs24 fc'>订单笔数</view>
+        </view>
+        <view class='bc-1'>
+            <navigator url='day' class='fbc ml10 mr10 p10 tc bb'>
+                <view class='f-1'>
+                    <text class='fc-3 fs22'>周三
+                <br/>05-17</text>
+                </view>
+                <view class='f-1 fc-1 pr20'>7112334.34</view>
+                <view class='f-1 fc-1 pr20'>71134</view>
+                <view class='f-1 fc-1'>32</view>
+                <view class='img-1'>
+                    <image src='../../img/direction.png'></image>
+                </view>
+            </navigator>
+            <navigator url='day' class='fbc ml10 mr10 p10 tc bb'>
+                <view class='f-1'>
+                    <text class='fc-3 fs22'>周三
+                <br/>05-17</text>
+                </view>
+                <view class='f-1 fc-1 pr20'>7112334.34</view>
+                <view class='f-1 fc-1 pr20'>71134</view>
+                <view class='f-1 fc-1'>32</view>
+                <view class='img-1'>
+                    <image src='../../img/direction.png'></image>
+                </view>
+            </navigator>
+            <navigator url='day' class='fbc ml10 mr10 p10 tc bb'>
+                <view class='f-1'>
+                    <text class='fc-3 fs22'>周三
+                <br/>05-17</text>
+                </view>
+                <view class='f-1 fc-1 pr20'>7112334.34</view>
+                <view class='f-1 fc-1 pr20'>71134</view>
+                <view class='f-1 fc-1'>32</view>
+                <view class='img-1'>
+                    <image src='../../img/direction.png'></image>
+                </view>
+            </navigator>
+            <navigator url='day' class='fbc ml10 mr10 p10 tc bb'>
+                <view class='f-1'>
+                    <text class='fc-3 fs22'>周三
+                <br/>05-17</text>
+                </view>
+                <view class='f-1 fc-1 pr20'>7112334.34</view>
+                <view class='f-1 fc-1 pr20'>71134</view>
+                <view class='f-1 fc-1'>32</view>
+                <view class='img-1'>
+                    <image src='../../img/direction.png'></image>
+                </view>
+            </navigator>
+            <navigator url='day' class='fbc ml10 mr10 p10 tc bb'>
+                <view class='f-1'>
+                    <text class='fc-3 fs22'>周三
+                <br/>05-17</text>
+                </view>
+                <view class='f-1 fc-1 pr20'>7112334.34</view>
+                <view class='f-1 fc-1 pr20'>71134</view>
+                <view class='f-1 fc-1'>32</view>
+                <view class='img-1'>
+                    <image src='../../img/direction.png'></image>
+                </view>
+            </navigator>
+            <navigator url='day' class='fbc ml10 mr10 p10 tc bb'>
+                <view class='f-1'>
+                    <text class='fc-3 fs22'>周三
+                <br/>05-17</text>
+                </view>
+                <view class='f-1 fc-1 pr20'>7112334.34</view>
+                <view class='f-1 fc-1 pr20'>71134</view>
+                <view class='f-1 fc-1'>32</view>
+                <view class='img-1'>
+                    <image src='../../img/direction.png'></image>
+                </view>
+            </navigator>
+        </view>
+    </view>
+
+
+    <!-- 按月筛选 -->
+    <view class='mask_box' wx:if="{{IsShowMonth}}">
+        <view class='mask' bindtap='Cheak'></view>
+        <view class='palt bc-1'>
+            <view class='p30 fbc lh2'>
+                <view class='fs26 fc-1'>
+                    2017-05 总收入： 494711.80
+                </view>
+                <view class='fs26 bl pl20 fc-6'>按月筛选</view>
+            </view>
+            <view class='pl30 pr30 bc-2 lh25 bt fc-3 fs24'>
+                近6个月（单选）
+            </view>
+            <view class='fbw month pl30 pr30 tc pt10 pb30 '>
+                <view class='br50 bc-1 fs24 fc-3 {{item==month?"active":""}}' bindtap='selectMonth' data-index='{{index}}' wx:for="{{monthArr}}" wx:key="{{index}}">{{item}}月</view>
+            </view>
+            <view class='pl30 pr30 bc-2 lh25 bt fc-3 fs24'>
+                其他月份
+            </view>
+            <view class='fbc ml10 mr10 p30 bb'>
+                <view class='f-3 fc-1 tl fs26'>年份月份</view>
+                <picker class='f-1' mode="date" value="{{date}}" fields="month" bindchange="bindDateChange">
+                    <view class='fac'>
+                        <view class="picker fc-3 fs24 ">
+                            {{date}}
+                        </view>
+                        <image src='../../img/direction.png' class='img-1'></image>
+                    </view>
+                </picker>
+            </view>
+            <view class='fac bc-1 lh3 mt100'>
+                <view class='f-3 fs26 fc-3 tl pl30' bindtap='ResetHandler'>重置筛选</view>
+                <view class='f-1 fs36 fc bc-3 tc' bindtap='ConfrimHandler'>完成</view>
+            </view>
+        </view>
+    </view>
+</view>

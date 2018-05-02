@@ -1,0 +1,101 @@
+/* pages/clients/detail.wxss */
+
+.img-1 {
+    width: 43rpx;
+    height: 43rpx;
+}
+
+.img-2 {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.img-3 {
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.img-4 {
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.active-3 {
+    background: #fff;
+    color: #ff997c;
+    border: 1px solid #ff997c;
+}
+
+.qingkun.active {
+    background: #ffd1c5;
+}
+
+.p10 {
+    padding: 10rpx;
+}
+
+.part {
+    right: 20px;
+}
+.palt {
+   width: 92%;
+   right: 0;
+}
+.tab_box view.active {
+    color: #000;
+    border-bottom: 8rpx solid #ff683e;
+}
+
+.palb {
+    position: fixed;
+    width: 100%;
+    border-top: 1px solid #ff683e;
+}
+
+.border {
+    border: 1px solid #ff683e;
+}
+
+.border2 {
+    border: 1px solid #b3b3b3;
+}
+
+.cuikun_box {
+    width: 260rpx;
+    border: none;
+    bottom: 210rpx;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.slot_box {
+    width: 100%;
+    height: 100%;
+}
+
+.btn_box {
+    padding: 35rpx 30rpx;
+}
+
+.btn_box view {
+    height: 66rpx;
+    line-height: 66rpx;
+    border-radius: 50px;
+    border: 1px solid #c2c2c2;
+}
+
+.btn_box view.active {
+    background: #ffe8e2;
+    color: #ff683e;
+    border: 1px solid #ff683e;
+}
+
+switch {
+    transform: scale(0.6);
+}
+
+.disable {
+    width: 100rpx;
+    height: 100rpx;
+    left: 120rpx;
+}

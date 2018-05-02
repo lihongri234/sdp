@@ -1,0 +1,215 @@
+<!--pages/tongji/product.wxml-->
+<view class='container pr'>
+    <view class='bc-2 pt20 pb20'>
+        <view class='search_box bc-1 ml20 mr20 br5'>
+            <view class='lh2 fac tc pl30 pr30 '>
+                <view class='f-1 tr mr10'>
+                    <image src='../../img/search.png' class='img-1'></image>
+                </view>
+                <view class='f-2 tl'>
+                    <input type='text' class='fs26 fc-3 lh2' maxlength='20' placeholder='{{placeholdertext}}'  bindfocus='SearchHandler'></input>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='tab_box fac bc-1 lh2 tc pt10 pb10 bb'>
+        <view bindtap='ShowTab' data-tabindex='0' class='fc-3 fs30 {{tabIndex=="0"?"active":""}}'>销售额</view>
+        <view bindtap='ShowTab' data-tabindex='1' class='fc-3 fs30 pr {{tabIndex=="1"?"active":""}}'>商品均价</view>
+        <view bindtap='ShowTab' data-tabindex='2' class='fc-3 fs30 pr {{tabIndex=="2"?"active":""}}'>销售数量</view>
+        <view bindtap='SoltHandler' class='fc-3 fs30 bl pl30'>筛选</view>
+    </view>
+    <swiper class="tab-content" current="{{tabIndex}}" duration="300" bindchange="switchTab" style="height:{{scrollHeight-152}}px;">
+      
+        <swiper-item wx:for="{{[1,2,3]}}" wx:key="{{index}}">
+            <block>
+                <view class='t_box bc-1'>
+                    <scroll-view scroll-y="true" style="height:{{scrollHeight-152}}px;" bindscrolltolower="scrolltolower">
+                        <view class="pb100">
+                            <view class='item pb20 pt20 bc-1'>
+                                <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                                    <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                                </view>
+                                <view class='fbc tl pl30 pr30 lh2'>
+                                    <view class='fs26 fc-1'>销售额:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>均价:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>销售量:<text class='fs30'>100</text></view>
+                                </view>
+                            </view>
+                            <view class='item pb20 pt20 bc-1'>
+                                <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                                    <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                                </view>
+                                <view class='fbc tl pl30 pr30 lh2'>
+                                    <view class='fs26 fc-1'>销售额:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>均价:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>销售量:<text class='fs30'>100</text></view>
+                                </view>
+                            </view>
+                            <view class='item pb20 pt20 bc-1'>
+                                <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                                    <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                                </view>
+                                <view class='fbc tl pl30 pr30 lh2'>
+                                    <view class='fs26 fc-1'>销售额:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>均价:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>销售量:<text class='fs30'>100</text></view>
+                                </view>
+                            </view>
+                            <view class='item pb20 pt20 bc-1'>
+                                <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                                    <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                                </view>
+                                <view class='fbc tl pl30 pr30 lh2'>
+                                    <view class='fs26 fc-1'>销售额:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>均价:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>销售量:<text class='fs30'>100</text></view>
+                                </view>
+                            </view>
+                            <view class='item pb20 pt20 bc-1'>
+                                <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                                    <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                                </view>
+                                <view class='fbc tl pl30 pr30 lh2'>
+                                    <view class='fs26 fc-1'>销售额:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>均价:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>销售量:<text class='fs30'>100</text></view>
+                                </view>
+                            </view>
+                            <view class='item pb20 pt20 bc-1'>
+                                <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                                    <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                                </view>
+                                <view class='fbc tl pl30 pr30 lh2'>
+                                    <view class='fs26 fc-1'>销售额:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>均价:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>销售量:<text class='fs30'>100</text></view>
+                                </view>
+                            </view>
+                            <view class='item pb20 pt20 bc-1'>
+                                <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                                    <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                                </view>
+                                <view class='fbc tl pl30 pr30 lh2'>
+                                    <view class='fs26 fc-1'>销售额:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>均价:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>销售量:<text class='fs30'>100</text></view>
+                                </view>
+                            </view>
+                            <view class='item pb20 pt20 bc-1'>
+                                <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                                    <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                                </view>
+                                <view class='fbc tl pl30 pr30 lh2'>
+                                    <view class='fs26 fc-1'>销售额:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>均价:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>销售量:<text class='fs30'>100</text></view>
+                                </view>
+                            </view>
+                            <view class='item pb20 pt20 bc-1'>
+                                <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                                    <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                                </view>
+                                <view class='fbc tl pl30 pr30 lh2'>
+                                    <view class='fs26 fc-1'>销售额:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>均价:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>销售量:<text class='fs30'>100</text></view>
+                                </view>
+                            </view>
+                            <view class='item pb20 pt20 bc-1'>
+                                <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                                    <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                                </view>
+                                <view class='fbc tl pl30 pr30 lh2'>
+                                    <view class='fs26 fc-1'>销售额:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>均价:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>销售量:<text class='fs30'>100</text></view>
+                                </view>
+                            </view>
+                            <view class='item pb20 pt20 bc-1'>
+                                <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                                    <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                                </view>
+                                <view class='fbc tl pl30 pr30 lh2'>
+                                    <view class='fs26 fc-1'>销售额:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>均价:<text class='fs30'>￥71004.00</text></view>
+                                    <view class='fs26 fc-1'>销售量:<text class='fs30'>100</text></view>
+                                </view>
+                            </view>
+
+                        </view>
+                    </scroll-view>
+                </view>
+            </block>
+        </swiper-item>
+    </swiper>
+    <view class='palb bc-3'>
+        <view class='fs36 fc lh3 tc'>总销售额：245689.26元</view>
+    </view>
+    <!-- 筛选弹出层  -->
+    <view class='slot_box bc-1 palt' wx:if="{{IsShowSlot}}">
+        <view class='tab_box fsc bc-1 lh2 tc pt10 pb10 bb'>
+            <view class='f-2 fac'>
+                <view bindtap='ShowTab' data-tabindex='0' class='fc-3 fs30 {{tabIndex=="0"?"active":""}}'>销售额</view>
+                <view bindtap='ShowTab' data-tabindex='1' class='fc-3 fs30 mr30 {{tabIndex=="1"?"active":""}}'>商品均价</view>
+                <view bindtap='ShowTab' data-tabindex='2' class='fc-3 fs30 mr30 {{tabIndex=="2"?"active":""}}'>销售数量</view>
+            </view>
+            <view class='pr30 bl' bindtap='CanlerHandler'>
+                <view class='fc-3 fs30 ml30 fc-6'>筛选 </view>
+            </view>
+        </view>
+        <view class='bc-2 lh2 fs24 fc-3 pl30'>交易时间</view>
+        <view class='fbc btn_box bc-1 tc'>
+            <view class='f-1 fs24 active'>今天</view>
+            <view class='f-1 fs24 mr30 ml30'>昨天</view>
+            <view class='f-1 fs24'>本月</view>
+        </view>
+        <view class='bc-2 lh2 fs24 fc-3 pl30'>其他时间</view>
+        <view class='fbc bb p30 bc-1'>
+            <view class='f-1 fc-1 tl fs26'>开始时间</view>
+            <picker class='f-1' mode="date" value="{{startDate}}" fields="day" bindchange="bindStartDateChange">
+                <view class='fac'>
+                    <view class="picker fs24 f-1 tr">
+                        {{startDate}}
+                    </view>
+                    <image src='../../img/direction.png' class='img-2'></image>
+                </view>
+            </picker>
+        </view>
+        <view class='fbc p30 bb bc-1'>
+            <view class='f-3 fc-1 tl fs26'>结束时间</view>
+            <picker class='f-1' mode="date" value="{{endDate}}" fields="day" bindchange="bindEndDateChange">
+                <view class='fac'>
+                    <view class="picker fs24 f-1 tr">
+                        {{endDate}}
+                    </view>
+                    <image src='../../img/direction.png' class='img-2'></image>
+                </view>
+            </picker>
+        </view>
+        <view class='bc-2 lh2 fs24 fc-3 pl30'>收款方式</view>
+        <view class='fbc btn_box bc-1 tc'>
+            <view class='f-1 fs24 fsc mr20 active'>
+                <image src='../../img/xianjin.png' class='img-4 ml20'></image>现金</view>
+            <view class='f-1 fs24 fsc mr20'>
+                <image src='../../img/weixin.png' class='img-4 ml20'></image>微信</view>
+            <view class='f-1 fs24 fsc mr20'>
+                <image src='../../img/zhifubao.png' class='img-4 ml20'></image>支付宝</view>
+            <view class='f-1 fs24 fsc '>
+                <image src='../../img/yinlian.png' class='img-4 ml20'></image>银联</view>
+        </view>
+        <view class='bc-2 lh2 fs24 fc-3 pl30'>交易状态</view>
+        <view class='fbc btn_box bc-1 tc'>
+            <view class='f-1 fs24 active'>交易成功</view>
+            <view class='f-1 fs24 mr30 ml30'>交易失败</view>
+        </view>
+        <view class='bc-2 lh2 fs24 fc-3 pl30'>开单人员</view>
+        <view class='fbc btn_box bc-1 tc'>
+            <view class='f-1 fs24 active'>小A</view>
+            <view class='f-1 fs24 mr30 ml30'>小B</view>
+        </view>
+        <view class='palb lh3 bc-1 fac'>
+            <view class='f-3 bc-1 pl30 fs26' bindtap='CanlerHandler'>重置筛选</view>
+            <view class='f-1 bc-3 fc lh3 tc fs36' bindtap='OKHandler'>完成</view>
+        </view>
+    </view>
+</view>

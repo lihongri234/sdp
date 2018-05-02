@@ -1,0 +1,51 @@
+/* pages/goods/add.wxss */
+
+image {
+  width: 70rpx;
+  height: 140rpx;
+}
+
+.model {
+  z-index: 999;
+}
+
+.model-body {
+  width: 90%;
+  height: auto;
+  position: absolute;
+  left: 5%;
+  top: 10rpx;
+}
+.model-row{
+  border: 1rpx solid #B3B3B3;
+}
+
+
+
+/*分类*/
+
+.categorylist {
+  margin: 20rpx 30rpx;
+}
+
+.categorylist .actvie {
+  border: 1rpx solid #ff683e;
+  color: #ff683e;
+  background-color: #fff7f4;
+}
+
+.categorylist .add {
+  font-size: 60rpx;
+  font-weight: bold;
+}
+
+.categoryitem {
+  width: 180rpx;
+  height: 70rpx;
+  line-height: 60rpx;
+  border: 1rpx solid #919191;
+  border-radius: 50rpx;
+  color: #919191;
+  text-align: center;
+  margin: 10rpx;
+}

@@ -1,0 +1,16 @@
+<!--pages/seting/staffmanage.wxml-->
+<view class='container'>
+<navigator class='fsc bc-1 bb p30 mt20' url='/pages/seting/staffinfo'>
+    <view class='f-1'>张三</view>
+    <view class='f-3 fsw fc-3 fs26'>客户管理 统计报表</view>
+    <view class='fc-3'>></view>
+</navigator>
+<navigator class='fsc bc-1 bb p30' url='/pages/seting/staffinfo'>
+    <view class='f-1'>李四</view>
+    <view class='f-3 fsw fc-3 fs26'>客户管理 统计报表 客户管理 统计报表</view>
+    <view class='fc-3'>></view>
+</navigator>
+ 
+  <text  class='fc-6  fac mt30'>提示：长按即可删除</text>
+    <button class='btn-orange mt30'>新增店员</button>
+</view>

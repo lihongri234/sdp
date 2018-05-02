@@ -1,0 +1,98 @@
+<!--pages/kucun/kucun.wxml-->
+<view class='container'>
+    <view class='search_box m20 bc-1 br5'>
+        <view class='lh2 fbc'>
+            <view class='f-2 tr mr10'>
+                <image src='../../img/search.png' class='img-1'></image>
+            </view>
+            <view class='f-3'>
+                <input type='text' class='fs26 fc-3 lh2' placeholder='搜索商品名称/编码' bindfocus='SearchHandler'></input>
+            </view>
+        </view>
+    </view>
+    <scroll-view scroll-y="true" class=" bc-1" style="height:{{scrollHeight-52}}px;" bindscrolltolower="scrolltolower">
+        <view class='pb100'>
+            <navigator url='kucundetail' class='item bb fbc p30'>
+                <view class='fs30 f-2 fc-1'>西瓜
+                    <view class='fs24 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</view>
+                </view>
+                <view class='fs22 f-1 fc-6 mr10 tr'>当前库存：
+                    <text class='fs-6 fs26'>712</text>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='kucundetail' class='item bb fbc p30'>
+                <view class='fs30 f-2 fc-1'>西瓜
+                    <view class='fs24 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</view>
+                </view>
+                <view class='fs22 f-1 fc-6 mr10 tr' >当前库存：
+                    <text class='fs-6 fs26'>712</text>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='kucundetail' class='item bb fbc p30'>
+                <view class='fs30 f-2 fc-1'>西瓜
+                    <view class='fs24 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</view>
+                </view>
+                <view class='fs22 f-1 fc-6 mr10 tr' >当前库存：
+                    <text class='fs-6 fs26'>712</text>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='kucundetail' class='item bb fbc p30'>
+                <view class='fs30 f-2 fc-1'>西瓜
+                    <view class='fs24 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</view>
+                </view>
+                <view class='fs22 f-1 fc-6 mr10 tr' >当前库存：
+                    <text class='fs-6 fs26'>712</text>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='kucundetail' class='item bb fbc p30'>
+                <view class='fs30 f-2 fc-1'>西瓜
+                    <view class='fs24 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</view>
+                </view>
+                <view class='fs22 f-1 fc-6 mr10 tr' >当前库存：
+                    <text class='fs-6 fs26'>712</text>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='kucundetail' class='item bb fbc p30'>
+                <view class='fs30 f-2 fc-1'>西瓜
+                    <view class='fs24 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</view>
+                </view>
+                <view class='fs22 f-1 fc-6 mr10 tr' >当前库存：
+                    <text class='fs-6 fs26'>712</text>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='kucundetail' class='item bb fbc p30'>
+                <view class='fs30 f-2 fc-1'>西瓜
+                    <view class='fs24 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</view>
+                </view>
+                <view class='fs22 f-1 fc-6 mr10 tr' >当前库存：
+                    <text class='fs-6 fs26'>712</text>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='kucundetail' class='item bb fbc p30'>
+                <view class='fs30 f-2 fc-1'>西瓜
+                    <view class='fs24 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</view>
+                </view>
+                <view class='fs22 f-1 fc-6 mr10 tr' >当前库存：
+                    <text class='fs-6 fs26'>712</text>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='kucundetail' class='item bb fbc p30'>
+                <view class='fs30 f-2 fc-1'>西瓜
+                    <view class='fs24 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</view>
+                </view>
+                <view class='fs22 f-1 fc-6 mr10 tr' >当前库存：
+                    <text class='fs-6 fs26'>712</text>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+        </view>
+    </scroll-view>
+</view>

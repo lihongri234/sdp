@@ -1,0 +1,67 @@
+<!--pages/goods/info.wxml-->
+<view class='container bc-1'>
+
+  <view class='box m10 pr'>
+    <image class='' src='../../img/bg.png'></image>
+    <view class='desc parb tc pt30 lh15'>
+      <view class='fs36'>菠萝蜜</view>
+      <view class='fs28'>商品编号：1002</view>
+    </view>
+  </view>
+
+  <view class='p30'>
+    <view class='fbc mt20 p10 fc-3'>
+      <view>创建时间：</view>
+      <view>201810071102100</view>
+    </view>
+    <view class='fbc p10 fc-3'>
+      <view>商品状态：</view>
+      <view>上架</view>
+    </view>
+    <view class='fbc p10 fc-3'>
+      <view>单位：</view>
+      <view>件</view>
+    </view>
+    <view class='fbc p10 fc-3'>
+      <view>产地：</view>
+      <view>海南三亚</view>
+    </view>
+    <view class='fbc p10 fc-3'>
+      <view>规格：</view>
+      <view>12.5kg/件</view>
+    </view>
+    <view class='fbc p10 fc-3'>
+      <view>品牌：</view>
+      <view>娃哈哈</view>
+    </view>
+    <view class='fbc p10 fc-3'>
+      <view>销售价格：</view>
+      <view class='fc-6'>￥12.90</view>
+    </view>
+    <view class='fbc p10 fc-3'>
+      <view>当前库存：</view>
+      <view class='fc-6'>154</view>
+    </view>
+  </view>
+
+<view class='operat' bindtap='more'>更多操作...</view>
+
+<view class='mask' wx:if='{{IsModel}}'>
+  <view class='operatlist '>
+    <view class='item fac' bindtap='delete'>
+        <image  src='/img/sp_ico_1.png'></image>
+        <view class='fs40'>删除商品</view>
+    </view>
+    <navigator class='item fac' url='/pages/goods/edit'>
+        <image  src='/img/sp_ico_2.png'></image>
+        <view class='fs40'>修改商品</view>
+    </navigator>
+    <view class='item fac' bindtap='updateStatus'>
+        <image  src='/img/sp_ico_3.png'></image>
+        <view class='fs40'>下架商品</view>
+    </view>
+  </view>
+
+</view>
+
+</view>

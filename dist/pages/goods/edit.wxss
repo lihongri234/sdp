@@ -1,0 +1,5 @@
+/* pages/goods/edit.wxss */
+image{
+  width: 70rpx;
+  height: 140rpx;
+}

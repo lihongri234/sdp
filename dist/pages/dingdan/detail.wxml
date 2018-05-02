@@ -1,0 +1,140 @@
+<!--pages/dingdan/detail.wxml-->
+<view class='container bc-1'>
+    <view class='p30'>
+        <scroll-view scroll-y="true" style="height:{{scrollHeight-48}}px;" bindscrolltolower="scrolltolower">
+        <view class='p30 tc lh15'>
+            <view class='fs36'>订单金额</view>
+            <view class='fs36 fc-6'>459670.39</view>
+        </view>
+        <view class='fbc lh2'>
+            <view class='f-1 tl'>
+                <view class='fs30 fc-3'>订单编号：</view>
+                <view class='fs30 fc-3'>订单状态：</view>
+                <view class='fs30 fc-3'>交易客户：</view>
+                <view class='fs30 fc-3'>下单时间：</view>
+                <view class='fs30 fc-3'>开单人员：</view>
+                <view class='fs30 fc-3'>合计金额：</view>
+                <view class='fs30 fc-3'>优惠金额：</view>
+                <view class='fs30 fc-3'>实际金额：</view>
+                <view class='fs30 fc-3'>支付方式：</view>
+            </view>
+            <view class='f-2 tr'>
+                <view class='fs30 fc-1'>201810071102100</view>
+                <view class='fs30 fc-1'>已完成</view>
+                <view class='fs30 fc-1'>李先生</view>
+                <view class='fs30 fc-1'>2018-03-06 11:14:20</view>
+                <view class='fs30 fc-1'>2018-03-06 11:14:20</view>
+                <view class='fs30 fc-1'>1547.80</view>
+                <view class='fs30 fc-1'>-0.80</view>
+                <view class='fs30 fc-1'>1547.00</view>
+                <view class='fs30 fc-1'>现金</view>
+            </view>
+        </view>
+            <view class='pb100'>
+                <!--清款记录  -->
+                 <view class='mt30'>
+                    <view class='fs32 lh2 fc-1'>清款记录（2个记录）：</view>
+                    <view class='fbc lh2'>
+                        <view class='tl'>
+                            <view class='fs30 fc-3'>2018-02-12 12:12:19</view>
+                            <view class='fs30 fc-3'>2018-02-12 12:12:19</view>
+                        </view>
+                        <view class='tr'>
+                            <view class='fs30 fc-1'>1273.90</view>
+                            <view class='fs30 fc-1'>1273.90</view>
+                        </view>
+                    </view>
+                </view> 
+                <!--商品详情 -->
+                <view class='mt30'>
+                    <view class='fs32 lh2 fc-1'>商品详情（6个品类）：</view>
+                    <view class='item lh15 mb20'>
+                        <view class='fs30 fc-3 '>菠萝蜜[海南三亚][12.5kg/件][三亚馆][件]</view>
+                        <view class='fbc'>
+                            <view class='fs30 fc-1'>￥1189.00
+                                <text class='fc-3 fs30'>x27</text>
+                            </view>
+                            <view class='fs30 fc-1'>小计：
+                                <text class='fc-6 fs32'>￥32103.00</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class='item lh15 mb20'>
+                        <view class='fs30 fc-3 '>菠萝蜜[海南三亚][12.5kg/件][三亚馆][件]</view>
+                        <view class='fbc'>
+                            <view class='fs30 fc-1'>￥1189.00
+                                <text class='fc-3 fs30'>x27</text>
+                            </view>
+                            <view class='fs30 fc-1'>小计：
+                                <text class='fc-6 fs32'>￥32103.00</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class='item lh15 mb20'>
+                        <view class='fs30 fc-3 '>菠萝蜜[海南三亚][12.5kg/件][三亚馆][件]</view>
+                        <view class='fbc'>
+                            <view class='fs30 fc-1'>￥1189.00
+                                <text class='fc-3 fs30'>x27</text>
+                            </view>
+                            <view class='fs30 fc-1'>小计：
+                                <text class='fc-6 fs32'>￥32103.00</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class='item lh15 mb20'>
+                        <view class='fs30 fc-3 '>菠萝蜜[海南三亚][12.5kg/件][三亚馆][件]</view>
+                        <view class='fbc'>
+                            <view class='fs30 fc-1'>￥1189.00
+                                <text class='fc-3 fs30'>x27</text>
+                            </view>
+                            <view class='fs30 fc-1'>小计：
+                                <text class='fc-6 fs32'>￥32103.00</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class='item lh15 mb20'>
+                        <view class='fs30 fc-3 '>菠萝蜜[海南三亚][12.5kg/件][三亚馆][件]</view>
+                        <view class='fbc'>
+                            <view class='fs30 fc-1'>￥1189.00
+                                <text class='fc-3 fs30'>x27</text>
+                            </view>
+                            <view class='fs30 fc-1'>小计：
+                                <text class='fc-6 fs32'>￥32103.00</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class='item lh15 mb20'>
+                        <view class='fs30 fc-3 '>菠萝蜜[海南三亚][12.5kg/件][三亚馆][件]</view>
+                        <view class='fbc'>
+                            <view class='fs30 fc-1'>￥1189.00
+                                <text class='fc-3 fs30'>x27</text>
+                            </view>
+                            <view class='fs30 fc-1'>小计：
+                                <text class='fc-6 fs32'>￥32103.00</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class='parb lh3 bc-3 fc tc' bindtap='MoreHandler'>更多订单操作...</view>
+    <!--弹出层  -->
+    <view class='mask_box' wx:if="{{IsShowMore}}">
+        <view class='mask' bindtap='CanlerHandler'></view>
+        <view class='palb cuikun_box'>
+            <view class='fsc mb30' bindtap=''>
+                <image src='../../img/rk_ico_1.png' class='img-3 mr20'></image>
+                <view class='fs30 fc tc'>打印订单</view>
+            </view>
+            <view class='fsc tc mb30'>
+                <image src='../../img/sp_ico_2.png' class='img-3 mr20'></image>
+                <view class='fs30 fc'>修改订单</view>
+            </view>
+            <view class='fsc tc mt10' bindtap='CanlerDingDanHandler'>
+                <image src='../../img/rk_ico_2.png' class='img-3 mr20'></image>
+                <view class='fs30 fc'>取消订单</view>
+            </view>
+        </view>
+    </view>
+</view>

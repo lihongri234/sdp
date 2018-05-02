@@ -1,0 +1,22 @@
+<!--系统设置-->
+
+<view class='container'>
+
+<view class='p30 fbc bc-1'>
+  <view>下单自动打印</view>
+  <view><checkbox color='#FF8665' checked='true'></checkbox></view>
+</view>
+<view class='p30 fbc bc-1 mt20 bb'>
+  <view>键盘声音</view>
+  <view><checkbox color='#FF8665'></checkbox></view>
+</view>
+<view class='p30 fbc bc-1'>
+  <view>推送声音</view>
+  <view><checkbox color='#FF8665'></checkbox></view>
+</view>
+<view class='p30 fbc bc-1 mt20'>
+  <view>允许负库存销售</view>
+  <view><checkbox color='#FF8665'></checkbox></view>
+</view>
+
+</view>

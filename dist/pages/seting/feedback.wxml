@@ -1,0 +1,5 @@
+<!--pages/seting/feedback.wxml-->
+<view class='container p20'>
+<textarea class='b1 bc-1 br5 p20' placeholder='输入您的问题和意见'></textarea>
+<button class='btn-orange mt30'>提交</button>
+</view>

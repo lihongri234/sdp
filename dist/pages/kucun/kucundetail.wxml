@@ -1,0 +1,191 @@
+<!--pages/kucun/kucundetail.wxml-->
+<view class='container pr'>
+    <view class='bc-1 fs26 fbc p30 '>
+        <view class='fc-6 fs26'>新疆小核桃 当前库存：127</view>
+        <view class='fc-1 fs26 pl30 bl' bindtap='SoltHandler'>筛选</view>
+    </view>
+    <scroll-view scroll-y="true" class="mt20 bc-1" style="height:{{scrollHeight-33}}px;" bindscrolltolower="scrolltolower">
+        <view class='pb100'>
+            <view class='item bb fbc p20'>
+                <view class='fs30 f-1 fc-1'>
+                    <view class='fs30 fc-1'>盘点</view>
+                    <view class='fs26 fc-3'>2018-03-01 16:12</view>
+                </view>
+                <view class='mr20'>
+                    <view class='fs26 fc-1'>￥99.23 </view>
+                    <view class='fs26 fc-6'>数量：99</view>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </view >
+            <view class='item bb fbc p20'>
+                <view class='fs30 f-1 fc-1'>
+                    <view class='fs30 fc-1'>盘点</view>
+                    <view class='fs26 fc-3'>2018-03-01 16:12</view>
+                </view>
+                <view class='mr20'>
+                    <view class='fs26 fc-1'>￥99.23 </view>
+                    <view class='fs26 fc-6'>数量：99</view>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </view >
+            <view class='item bb fbc p20'>
+                <view class='fs30 f-1 fc-1'>
+                    <view class='fs30 fc-1'>盘点</view>
+                    <view class='fs26 fc-3'>2018-03-01 16:12</view>
+                </view>
+                <view class='mr20'>
+                    <view class='fs26 fc-1'>￥99.23 </view>
+                    <view class='fs26 fc-6'>数量：99</view>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </view >
+            <view class='item bb fbc p20'>
+                <view class='fs30 f-1 fc-1'>
+                    <view class='fs30 fc-1'>盘点</view>
+                    <view class='fs26 fc-3'>2018-03-01 16:12</view>
+                </view>
+                <view class='mr20'>
+                    <view class='fs26 fc-1'>￥99.23 </view>
+                    <view class='fs26 fc-6'>数量：99</view>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </view >
+            <view class='item bb fbc p20'>
+                <view class='fs30 f-1 fc-1'>
+                    <view class='fs30 fc-1'>盘点</view>
+                    <view class='fs26 fc-3'>2018-03-01 16:12</view>
+                </view>
+                <view class='mr20'>
+                    <view class='fs26 fc-1'>￥99.23 </view>
+                    <view class='fs26 fc-6'>数量：99</view>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </view >
+            <view class='item bb fbc p20'>
+                <view class='fs30 f-1 fc-1'>
+                    <view class='fs30 fc-1'>盘点</view>
+                    <view class='fs26 fc-3'>2018-03-01 16:12</view>
+                </view>
+                <view class='mr20'>
+                    <view class='fs26 fc-1'>￥99.23 </view>
+                    <view class='fs26 fc-6'>数量：99</view>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </view >
+            <view class='item bb fbc p20'>
+                <view class='fs30 f-1 fc-1'>
+                    <view class='fs30 fc-1'>盘点</view>
+                    <view class='fs26 fc-3'>2018-03-01 16:12</view>
+                </view>
+                <view class='mr20'>
+                    <view class='fs26 fc-1'>￥99.23 </view>
+                    <view class='fs26 fc-6'>数量：99</view>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </view >
+            <view class='item bb fbc p20'>
+                <view class='fs30 f-1 fc-1'>
+                    <view class='fs30 fc-1'>盘点</view>
+                    <view class='fs26 fc-3'>2018-03-01 16:12</view>
+                </view>
+                <view class='mr20'>
+                    <view class='fs26 fc-1'>￥99.23 </view>
+                    <view class='fs26 fc-6'>数量：99</view>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </view >
+            <view class='item bb fbc p20'>
+                <view class='fs30 f-1 fc-1'>
+                    <view class='fs30 fc-1'>盘点</view>
+                    <view class='fs26 fc-3'>2018-03-01 16:12</view>
+                </view>
+                <view class='mr20'>
+                    <view class='fs26 fc-1'>￥99.23 </view>
+                    <view class='fs26 fc-6'>数量：99</view>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </view >
+            <view class='item bb fbc p20'>
+                <view class='fs30 f-1 fc-1'>
+                    <view class='fs30 fc-1'>盘点</view>
+                    <view class='fs26 fc-3'>2018-03-01 16:12</view>
+                </view>
+                <view class='mr20'>
+                    <view class='fs26 fc-1'>￥99.23 </view>
+                    <view class='fs26 fc-6'>数量：99</view>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </view >
+            <view class='item bb fbc p20'>
+                <view class='fs30 f-1 fc-1'>
+                    <view class='fs30 fc-1'>盘点</view>
+                    <view class='fs26 fc-3'>2018-03-01 16:12</view>
+                </view>
+                <view class='mr20'>
+                    <view class='fs26 fc-1'>￥99.23 </view>
+                    <view class='fs26 fc-6'>数量：99</view>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </view >
+            <view class='item bb fbc p20'>
+                <view class='fs30 f-1 fc-1'>
+                    <view class='fs30 fc-1'>盘点</view>
+                    <view class='fs26 fc-3'>2018-03-01 16:12</view>
+                </view>
+                <view class='mr20'>
+                    <view class='fs26 fc-1'>￥99.23 </view>
+                    <view class='fs26 fc-6'>数量：99</view>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </view >
+            <view class='item bb fbc p20'>
+                <view class='fs30 f-1 fc-1'>
+                    <view class='fs30 fc-1'>入库</view>
+                    <view class='fs26 fc-3'>2018-03-01 16:12</view>
+                </view>
+                <view class='mr20'>
+                    <view class='fs26 fc-1'>￥99.23 </view>
+                    <view class='fs26 fc-6'>数量：99</view>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </view >
+            <view class='item bb fbc p20'>
+                <view class='fs30 f-1 fc-1'>
+                    <view class='fs30 fc-1'>销售出库</view>
+                    <view class='fs26 fc-3'>2018-03-01 16:12</view>
+                </view>
+                <view class='mr20'>
+                    <view class='fs26 fc-1'>￥99.23 </view>
+                    <view class='fs26 fc-6'>数量：99</view>
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </view >
+        </view>
+    </scroll-view>
+    <!-- 筛选弹出层  -->
+    <view class='mask_box' wx:if="{{IsShowSlot}}">
+        <view class='mask' bindtap='CanlerHandler'></view>
+        <view class='palt bc-1 '>
+            <view class='bc-1 fs26 fbc p30 '>
+                <view class='fc-6 fs26'>新疆小核桃 当前库存：127</view>
+                <view class='fc-1 fs26 pl30 bl fc-6' bindtap='SoltHandler'>筛选</view>
+            </view>
+            <view class='bc-2 lh2 fs24 fc-3 pl30'>条件选择</view>
+            <view class='fbw btn_box bc-1 tc'>
+                <view class='fs24 {{Index==0?"active":""}}' bindtap='SelectHandler' data-index="0">全部</view>
+                <view class='none'></view>
+                <view class='none'></view>
+                <view class='fs24 {{Index==1?"active":""}}' bindtap='SelectHandler' data-index="1">销售出库</view>
+                <view class='fs24 {{Index==2?"active":""}}' bindtap='SelectHandler' data-index="2">订单取消</view>
+                <view class='fs24 {{Index==3?"active":""}}' bindtap='SelectHandler' data-index="3">盘点</view>
+                <view class='fs24 {{Index==4?"active":""}}' bindtap='SelectHandler' data-index="4">报损</view>
+                <view class='fs24 {{Index==5?"active":""}}' bindtap='SelectHandler' data-index="5">入库</view>
+                <view class='fs24 {{Index==6?"active":""}}' bindtap='SelectHandler' data-index="6">取消入库</view>
+            </view>
+            <view class='mt100 lh3 bc-1 fac'>
+                <view class='f-3 bc-1 pl30 fs26' bindtap='CanlerHandler'>重置筛选</view>
+                <view class='f-1 bc-3 fc lh3 tc fs36' bindtap='ConfrimHandler'>完成</view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,138 @@
+<!--index.wxml-->
+<view class='container'>
+  <input class='m20 bc-1 tc p10 br5' type='text' value='' placeholder='搜索名称/编号' placeholder-class=''></input>
+
+  <view class='fac bc-1 p30 bb search'>
+    <view class='f-2 tc fc-2' bindtap='ShowTab' data-tabindex='0'>
+      <text class='{{tabIndex==0?"active":""}}'>已上架</text>
+    </view>
+    <view class='f-2 tc fc-2' bindtap='ShowTab' data-tabindex='1'>
+      <text class='{{tabIndex==1?"active":""}}'>未上架</text>
+    </view>
+    <navigator class='f-1 tc fc-2' url='/pages/goods/add'>| 新增+</navigator>
+  </view>
+  <view class='goodslist'>
+
+    <swiper class="tab-content" current="{{tabIndex}}" duration="300" bindchange="switchTab" style="height:1200rpx">
+      <swiper-item wx:for="{{[1,2]}}" wx:key="{{index}}">
+        <scroll-view scroll-y="true" class="scoll-h" style="height:{{scrollHeight}}px;" bindscrolltolower="scrolltolower">
+          <block>
+
+            <navigator class='goods mb10' url='/pages/goods/info'>
+              <text class='fc-3 fs30'>商品编码：2009</text>
+              <view class='goodsbody fsc mt30'>
+                <view class='f-1 img'>
+                  <image src='../../img/kh_ico_1.png'></image>
+                </view>
+                <view class='f-3' style='margin-left: 10rpx;'>
+                  <view class='fs32 lh15 fc-1'>泰国超甜菠萝蜜</view>
+                  <view class='fs30 lh15 fc-1'>售价：
+                    <text class='fc-6 fs-32'>￥89.00</text> </view>
+                  <view class='fs30 lh15 fc-1'>库存：127</view>
+                </view>
+                <view class='f-2' catchtap='ClearEvent'>
+                  <view class='btn-update' bindtap='update'>修改价格</view>
+                  <view class='btn-Top'>置顶</view>
+                </view>
+              </view>
+            </navigator>
+
+            <navigator class='goods mb10' url='/pages/goods/info'>
+              <text class='fc-3 fs30'>商品编码：2009</text>
+              <view class='goodsbody fsc mt30'>
+                <view class='f-1 img'>
+                  <image src='../../img/kh_ico_1.png'></image>
+                </view>
+                <view class='f-3' style='margin-left: 10rpx;'>
+                  <view class='fs32 lh15 fc-1 ellipsis'>泰国超甜菠萝蜜</view>
+                  <view class='fs30 lh15 fc-1'>售价：
+                    <text class='fc-6 fs-32'>￥89.00</text> </view>
+                  <view class='fs30 lh15 fc-1'>库存：127</view>
+                </view>
+                <view class='f-2' catchtap='ClearEvent'>
+                  <view class='btn-update' bindtap='update'>修改价格</view>
+                  <view class='btn-Top btn-fc'>已置顶</view>
+                </view>
+              </view>
+            </navigator>
+
+            <navigator class='goods mb10' url='/pages/goods/info'>
+              <text class='fc-3 fs30'>商品编码：2009</text>
+              <view class='goodsbody fsc mt30'>
+                <view class='f-1 img'>
+                  <image src='../../img/kh_ico_1.png'></image>
+                </view>
+                <view class='f-3' style='margin-left: 10rpx;'>
+                  <view class='fs32 lh15 fc-1 ellipsis'>泰国超甜菠萝蜜</view>
+                  <view class='fs30 lh15 fc-1'>售价：
+                    <text class='fc-6 fs-32'>￥89.00</text> </view>
+                  <view class='fs30 lh15 fc-1'>库存：127</view>
+                </view>
+                <view class='f-2' catchtap='ClearEvent'>
+                  <view class='btn-update' bindtap='update'>修改价格</view>
+                  <view class='btn-Top btn-fc'>已置顶</view>
+                </view>
+              </view>
+            </navigator>
+
+            <navigator class='goods mb10' url='/pages/goods/info'>
+              <text class='fc-3 fs30'>商品编码：2009</text>
+              <view class='goodsbody fsc mt30'>
+                <view class='f-1 img'>
+                  <image src='../../img/kh_ico_1.png'></image>
+                </view>
+                <view class='f-3' style='margin-left: 10rpx;'>
+                  <view class='fs32 lh15 fc-1 ellipsis'>泰国超甜菠萝蜜</view>
+                  <view class='fs30 lh15 fc-1'>售价：
+                    <text class='fc-6 fs-32'>￥89.00</text> </view>
+                  <view class='fs30 lh15 fc-1'>库存：127</view>
+                </view>
+                <view class='f-2' catchtap='ClearEvent'>
+                  <view class='btn-update' bindtap='update'>修改价格</view>
+                  <view class='btn-Top btn-fc'>已置顶</view>
+                </view>
+              </view>
+            </navigator>
+
+            <navigator class='goods mb10' url='/pages/goods/info'>
+              <text class='fc-3 fs30'>商品编码：2009</text>
+              <view class='goodsbody fsc mt30'>
+                <view class='f-1 img'>
+                  <image src='../../img/kh_ico_1.png'></image>
+                </view>
+                <view class='f-3' style='margin-left: 10rpx;'>
+                  <view class='fs32 lh15 fc-1 ellipsis'>泰国超甜菠萝蜜</view>
+                  <view class='fs30 lh15 fc-1'>售价：
+                    <text class='fc-6 fs-32'>￥89.00</text> </view>
+                  <view class='fs30 lh15 fc-1'>库存：127</view>
+                </view>
+                <view class='f-2' catchtap='ClearEvent'>
+                  <view class='btn-update' bindtap='update'>修改价格</view>
+                  <view class='btn-Top btn-fc'>已置顶</view>
+                </view>
+              </view>
+            </navigator>
+
+          </block>
+        </scroll-view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!--修改价格-->
+  <view class='model mask pt20' wx:if='{{IsModel}}'>
+    <view class='model-body bc-1 br5'>
+      <view class='p30 tc fs40'>火参果</view>
+      <view class='m-20-30 br5 fsc model-row p-20-30'>
+        <view class='f-1'>修改价格</view>
+        <input class='f-2' placeholder='请输入价格'></input>
+      </view>
+      <view class='fac mt30 bt'>
+        <view class='f-1 tc p30' bindtap='cancel'>取消</view>
+        <view class='f-1 tc p30 bl fc-6'>确定</view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

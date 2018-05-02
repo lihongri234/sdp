@@ -1,0 +1,240 @@
+<!--pages/kucun/pandianing.wxml-->
+<view class='container'>
+    <view class='search_box bc-2 br5 bb p20'>
+        <view class='lh2 fbc bc-1'>
+            <view class='f-2 tr mr10'>
+                <image src='../../img/search.png' class='img-1'></image>
+            </view>
+            <view class='f-3'>
+                <input type='text' class='fs26 fc-3 lh2' placeholder='搜索' bindfocus='SearchHandler'></input>
+            </view>
+        </view>
+    </view>
+    <view class='fs24 p20 fc-6'>
+        2017-05-09 共盘点商品 1 个
+    </view>
+    <scroll-view scroll-y="true" style="height:{{scrollHeight-137}}px;" bindscrolltolower="scrolltolower">
+        <view class='pb30 pl30 pr30'>
+            <view class='item bc-1 mb20 p-20-30' bindtap='PanDianHandler' data-item='西瓜'>
+                <view class='fbc'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                </view>
+                <view class='fbc tl'>
+                    <view class='fs26 lh2 fc-2 f-1'>库存数量：498</view>
+                    <view class='fs26 lh2 fc-2 f-1'>成本均价：￥498.23</view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20 p-20-30' bindtap='PanDianHandler' data-item='哈密瓜'>
+                <view class='fbc'>
+                    <view class='fs26 f-2 fc-1'>哈密瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                </view>
+                <view class='fbc tl'>
+                    <view class='fs26 lh2 fc-2 f-1'>库存数量：498</view>
+                    <view class='fs26 lh2 fc-2 f-1'>成本均价：￥498.23</view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20' bindtap='PanDianHandler' data-item='西瓜'>
+                <view class='bb fbc p30'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fs22 fc br50 pl20 pr20 lh2 bc-3 '>
+                        盘盈
+                    </view>
+                </view>
+                <view class='fbc p30 tl'>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>库存数量：498</view>
+                        <view class='fs26 lh2 fc-2'>盘点数量：494</view>
+                        <view class='fs26 lh2 fc-2'>盈亏数量：
+                            <text class='fc-6 fs26'>-4</text>
+                        </view>
+                    </view>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>成本均价：￥498.23</view>
+                        <view class='fs26 lh2 fc-2'>商品总值：￥498456.32</view>
+                        <view class='fs26 lh2 fc-2'>盈亏金额：
+                            <text class='fc-6 fs26'>￥2812.23</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20 p-20-30' bindtap='PanDianHandler' data-item='西瓜'>
+                <view class='fbc'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                </view>
+                <view class='fbc tl'>
+                    <view class='fs26 lh2 fc-2 f-1'>库存数量：498</view>
+                    <view class='fs26 lh2 fc-2 f-1'>成本均价：￥498.23</view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20 p-20-30' bindtap='PanDianHandler' data-item='西瓜'>
+                <view class='fbc'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                </view>
+                <view class='fbc tl'>
+                    <view class='fs26 lh2 fc-2 f-1'>库存数量：498</view>
+                    <view class='fs26 lh2 fc-2 f-1'>成本均价：￥498.23</view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20' bindtap='PanDianHandler' data-item='西瓜'>
+                <view class='bb fbc p30'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fs22 fc br50 pl20 pr20 lh2 bc-3 '>
+                        盘盈
+                    </view>
+                </view>
+                <view class='fbc p30 tl'>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>库存数量：498</view>
+                        <view class='fs26 lh2 fc-2'>盘点数量：494</view>
+                        <view class='fs26 lh2 fc-2'>盈亏数量：
+                            <text class='fc-6 fs26'>-4</text>
+                        </view>
+                    </view>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>成本均价：￥498.23</view>
+                        <view class='fs26 lh2 fc-2'>商品总值：￥498456.32</view>
+                        <view class='fs26 lh2 fc-2'>盈亏金额：
+                            <text class='fc-6 fs26'>￥2812.23</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20 p-20-30' bindtap='PanDianHandler' data-item='西瓜'>
+                <view class='fbc'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                </view>
+                <view class='fbc tl'>
+                    <view class='fs26 lh2 fc-2 f-1'>库存数量：498</view>
+                    <view class='fs26 lh2 fc-2 f-1'>成本均价：￥498.23</view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20 p-20-30' bindtap='PanDianHandler' data-item='西瓜'>
+                <view class='fbc'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                </view>
+                <view class='fbc tl'>
+                    <view class='fs26 lh2 fc-2 f-1'>库存数量：498</view>
+                    <view class='fs26 lh2 fc-2 f-1'>成本均价：￥498.23</view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20' bindtap='PanDianHandler' data-item='西瓜'>
+                <view class='bb fbc p30'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fs22 fc br50 pl20 pr20 lh2 bc-3 '>
+                        盘盈
+                    </view>
+                </view>
+                <view class='fbc p30 tl'>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>库存数量：498</view>
+                        <view class='fs26 lh2 fc-2'>盘点数量：494</view>
+                        <view class='fs26 lh2 fc-2'>盈亏数量：
+                            <text class='fc-6 fs26'>-4</text>
+                        </view>
+                    </view>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>成本均价：￥498.23</view>
+                        <view class='fs26 lh2 fc-2'>商品总值：￥498456.32</view>
+                        <view class='fs26 lh2 fc-2'>盈亏金额：
+                            <text class='fc-6 fs26'>￥2812.23</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20 p-20-30' bindtap='PanDianHandler' data-item='西瓜'>
+                <view class='fbc'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                </view>
+                <view class='fbc tl'>
+                    <view class='fs26 lh2 fc-2 f-1'>库存数量：498</view>
+                    <view class='fs26 lh2 fc-2 f-1'>成本均价：￥498.23</view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20 p-20-30' bindtap='PanDianHandler' data-item='西瓜'>
+                <view class='fbc'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                </view>
+                <view class='fbc tl'>
+                    <view class='fs26 lh2 fc-2 f-1'>库存数量：498</view>
+                    <view class='fs26 lh2 fc-2 f-1'>成本均价：￥498.23</view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20' bindtap='PanDianHandler' data-item='西瓜'>
+                <view class='bb fbc p30'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fs22 fc br50 pl20 pr20 lh2 bc-3 '>
+                        盘盈
+                    </view>
+                </view>
+                <view class='fbc p30 tl'>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>库存数量：498</view>
+                        <view class='fs26 lh2 fc-2'>盘点数量：494</view>
+                        <view class='fs26 lh2 fc-2'>盈亏数量：
+                            <text class='fc-6 fs26'>-4</text>
+                        </view>
+                    </view>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>成本均价：￥498.23</view>
+                        <view class='fs26 lh2 fc-2'>商品总值：￥498456.32</view>
+                        <view class='fs26 lh2 fc-2'>盈亏金额：
+                            <text class='fc-6 fs26'>￥2812.23</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+
+    <view class='palb fs32 lh3 tc bc-3 fc' bindtap='EndPanDianHandler'>结束盘点</view>
+    
+    <!--盘点弹出层  -->
+    <view class='mask_box' wx:if="{{IsShowPanDian}}">
+        <view class='mask' bindtap='CanlerHandler'></view>
+        <view class='palt bc-1 br5 m30'>
+            <view class='center tc p30 mt30'>
+                <view class='fs36 lh2 mb20'>{{NameValue}}</view>
+                <view class='box lh25 p10 mb10 {{IsActive?"active":""}}'>
+                    <view class='fsc bc-1  br5 {{IsActive?"border":"border2"}}'>
+                        <view class='fs26 pl10'>盘点数量</view>
+                        <input type='number' placeholder='0.0' value='{{money}}' focus bindfocus='FocusHandler' bindblur='BlurHandler' class='fs26' maxlength='10' bindinput='{{GetValue}}' value='{{value}}' class='f-1 tl pl10'></input>
+                    </view>
+                </view>
+                <view class='box lh25 p10 mb10  {{IsActive2?"active":""}}'>
+                    <view class='fsc bc-1  br5 {{IsActive2?"border":"border2"}}'>
+                        <view class='fs26 pl10 mr10'>价格成本</view>
+                        <input type='number' placeholder='' value='{{}}' bindfocus='FocusHandler2' bindblur='BlurHandler2' class='fs26' maxlength='20' class='f-1 tl pl10'></input>
+                    </view>
+                </view>
+            </view>
+            <view class='fsc lh3 mt20 bt tc'>
+                <view class='fs36 f-1 br' bindtap='CanlerHandler'>取消</view>
+                <view class='fs36 fc-6 f-1' bindtap='ConfrimHandler'>确定</view>
+            </view>
+        </view>
+    </view>
+</view>

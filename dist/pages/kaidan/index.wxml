@@ -1,0 +1,204 @@
+<!--pages/kaidan/index.wxml-->
+<view class='container bc-1'>
+  <!--header start-->
+  <view class='head fbc bc-1 p10  pl30 pr30'>
+    <view class='head-titile pt10 pb10 fc-6 fs36'>陈老板</view>
+    <view class='head-operat fs48 bold fc-3 {{IsOperat?"fc-6":""}}' bindtap='Operating'>+</view>
+  </view>
+  <!--header end-->
+  <!--加号操作 start-->
+  <view class='operatModel' wx:if='{{IsOperat}}'>
+    <view class='fsc operatitem'>
+      <image src='../../img/kd_ico_1.png'></image>
+      <view>订单挂起</view>
+    </view>
+    <view class='fsc operatitem'>
+      <image src='../../img/kd_ico_2.png'></image>
+      <view>新增商品</view>
+    </view>
+    <view class='fsc operatitem'>
+      <image src='../../img/kd_ico_3.png'></image>
+      <view>清空挂单</view>
+    </view>
+  </view>
+  <!--加号操作 end-->
+  <!--商品列表 start-->
+  <view class='fbw'>
+    <view class='f-2'>
+      <view class='searchFor p20 bc-2'>
+        <view class='lh2 fbc bc-1 br5' bindtap='ShowSearch'>
+          <view class='f-1 tr mr10'>
+            <image src='../../img/search.png' class='img-1'></image>
+          </view>
+          <view class='f-2'>
+            <input type='text' class='fs26 fc-3 lh2' placeholder='商品搜索' bindfocus='SearchHandler'></input>
+          </view>
+        </view>
+      </view>
+      <view class='goodslist'>
+        <view class='goodsitem atvice1' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包][样品] [第二行]</view>
+          <view class='money'></view>
+        </view>
+        <view class='goodsitem atvice2' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包]</view>
+          <view class='money'>3.90x99=￥12266.10</view>
+        </view>
+      </view>
+
+    </view>
+    <view class='kaidanBody f-3 bc-1'>
+      <view class='sumMoney'>
+        <view class='money1'>原价
+          <text>23154.90</text>
+        </view>
+        <view class='money2'>总价
+          <text class='fc-0 fs36'>23154.00</text>
+        </view>
+        <view class='money3'>优惠
+          <text>0.90</text>
+          <view class='edit' bindtap='EditAmount'>修改</view>
+        </view>
+      </view>
+      <view class='orderPrice p10 bc-2 {{Isatvice==1?"atvice":""}}'>
+        <view class='fsc br5 p10 bc-1 fc-3 b2'>
+          <view class='f-1'>下单价格</view>
+          <input class='f-2' value='{{PriceStr}}' data-id='1' bindfocus='FocusHandler'></input>
+        </view>
+      </view>
+      <view class='orderQuantity p10 bc-2 {{Isatvice==2?"atvice":""}}'>
+        <view class='fsc br5 p10 bc-1 fc-3 b2'>
+          <view class='f-1'>下单数量</view>
+          <input class='f-2' value='{{QuantityStr}}' data-id='2' bindfocus='FocusHandler'></input>
+        </view>
+      </view>
+      <!--数字键盘 start-->
+      <view class='keyboard'>
+        <image src='../../img/k7.png' data-num='7' bindtap='NumberClick'></image>
+        <image src='../../img/k8.png' data-num='8' bindtap='NumberClick'></image>
+        <image src='../../img/k9.png' data-num='9' bindtap='NumberClick'></image>
+        <image src='../../img/k4.png' data-num='4' bindtap='NumberClick'></image>
+        <image src='../../img/k5.png' data-num='5' bindtap='NumberClick'></image>
+        <image src='../../img/k6.png' data-num='6' bindtap='NumberClick'></image>
+        <image src='../../img/k1.png' data-num='1' bindtap='NumberClick'></image>
+        <image src='../../img/k2.png' data-num='2' bindtap='NumberClick'></image>
+        <image src='../../img/k3.png' data-num='3' bindtap='NumberClick'></image>
+        <image src='../../img/kdian.png' data-num='.' bindtap='NumberClick'></image>
+        <image src='../../img/k0.png' data-num='0' bindtap='NumberClick'></image>
+        <image src='../../img/kdel.png' data-num='del' bindtap='NumberClick'></image>
+        <audio id='numAudio' src='{{audioUrl}}'></audio>
+      </view>
+      <!--数字键盘 end-->
+    </view>
+  </view>
+  <!--商品列表 end-->
+  <!--加号操作 start-->
+  <view class='footer fsc'>
+    <view class='btn-pay f-1' bindtap='SettleAccounts'>其他支付方式</view>
+    <view class='btn-account f-1'>挂账</view>
+    <view class='btn-cash f-1'>现金</view>
+  </view>
+  <!--加号操作 end-->
+
+  <!--修改金额  start-->
+  <view class='model mask pt20' wx:if='{{IsEditAmount}}'>
+    <view class='model-body bc-1 br5'>
+      <view class='p30 tc fs40'>修改优惠金额</view>
+      <view class='m-20-30 fsc'>
+        <view class='f-1'>合计金额</view>
+        <view class='f-2'>845.23</view>
+      </view>
+      <view class='p10 bc-8 m-20-30'>
+        <view class='br5 fbc b1 p20 bc-1 b2'>
+          <view class='f-1'>优惠金额</view>
+          <input class='f-2 fc-3' placeholder='请输入优惠金额' value='0.23'></input>
+        </view>
+      </view>
+      <view class='p10 m-20-30'>
+        <view class='br5 fbc b2 p20 bc-1 b2'>
+          <view class='f-1'>结算金额</view>
+          <input class='f-2 fc-3' placeholder='请输入结算金额' value='845'></input>
+          <view class='fc-6'>抹零</view>
+        </view>
+      </view>
+      <view class='fac mt30 bt'>
+        <view class='f-1 tc p30' bindtap='cancelAmount'>取消</view>
+        <view class='f-1 tc p30 bl fc-6'>确定</view>
+      </view>
+    </view>
+  </view>
+  <!--修改金额 end-->
+
+  <!--订单结算 start-->
+  <view class='model mask pt20' wx:if='{{IsSettleAccounts}}'>
+    <view class='model-body bc-1 br5'>
+      <view class='p30 tc fs40'>订单结算</view>
+      <view class='m-20-30 fsc'>
+        <view class='f-1'>合计金额</view>
+        <view class='f-2'>845.23</view>
+      </view>
+      <view class='m-20-30 fsc'>
+        <view class='f-1'>付现类型</view>
+        <view class='f-2 fsc playType'>
+          <view class='atvice'>现金</view>
+          <view>微信</view>
+          <view>支付宝</view>
+          <view>银联</view>
+        </view>
+      </view>
+      <view class='p10 bc-8 m-20-30'>
+        <view class='br5 fsc b1 p20 bc-1 b2'>
+          <view class='f-1'>付现金额</view>
+          <input class='f-2 fc-3' placeholder='请输入付现金额' value='0.23'></input>
+          <view class='f-1 fs26 fc-6'>全部付现</view>
+        </view>
+      </view>
+      <view class='p10 m-20-30'>
+        <view class='br5 fsc b2 p20 bc-1 b2'>
+          <view class='f-1'>挂账金额</view>
+          <input class='f-2 fc-3' placeholder='请输入挂账金额' value='845'></input>
+        </view>
+      </view>
+      <view class='fac mt30 bt'>
+        <view class='f-1 tc p30' bindtap='cancelSettleAccounts'>取消</view>
+        <view class='f-1 tc p30 bl fc-6'>确定</view>
+      </view>
+    </view>
+  </view>
+  <!--订单结算 end-->
+
+  <!--搜索列表 start-->
+  <view class='model mask pt20 SearchModel' wx:if='{{IsSearch}}'>
+    <view class='model-body bc-1 br5'>
+      <view class='p20 fsc bb'>
+        <view class='f-1' bindtap='HiedwSearch'>关闭</view>
+        <input class='f-2' type='text' placeholder='请输入商品名称/编号'></input>
+        <view class='f-1 tr'>搜索</view>
+      </view>
+      <view class='list' style='height:100%;'>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+      </view>
+    </view>
+  </view>
+  <!--搜索列表 end-->
+</view>

@@ -1,0 +1,25 @@
+<!--pages/kucun/index.wxml-->
+<view class='container'>
+    <view class='p30 fbw mt20'>
+        <navigator url='ruku?type=1' class='bc-1 br5 p30 mb30'>
+            <image src='../../img/ruku.png' class='img-1 mb20'></image>
+            <view class='fs30 lh3 mt30'>入库</view>
+        </navigator>
+        <navigator url='pandian' class='bc-1 br5 p30 mb30'>
+            <image src='../../img/pandian.png' class='img-1 mb20'></image>
+            <view class='fs30 lh3 mt30'>盘点</view>
+        </navigator>
+        <navigator url='baosun' class='bc-1 br5 p30 mb30'>
+            <image src='../../img/baosun.png' class='img-1 mb20'></image>
+            <view class='fs30 lh3 mt30'>报损</view>
+        </navigator>
+        <navigator url='churuku' class='bc-1 br5 p30 mb30'>
+            <image src='../../img/churuku.png' class='img-1 mb20'></image>
+            <view class='fs30 lh3 mt30'>出入库记录</view>
+        </navigator>
+        <navigator url='kucun' class='bc-1 br5 p30 mb30'>
+            <image src='../../img/kucun.png' class='img-1 mb20'></image>
+            <view class='fs30 lh3 mt30'>库存状况</view>
+        </navigator>
+    </view>
+</view>

@@ -1,0 +1,191 @@
+<!--pages/kucun/rukudetail.wxml-->
+<view class='container pr'>
+    <scroll-view scroll-y="true" class="bc-1" style="height:{{scrollHeight-48}}px;" bindscrolltolower="scrolltolower">
+        <view class='pb100'>
+            <view class='p30'>
+                <view class='item mt20'>
+                    <view class='fbc'>
+                        <view class='fs30 lh2 fc-1'>
+                            新疆小核桃
+                        </view>
+                        <view class='fs30 fc-1'>￥99.23 </view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            [80][吐鲁番][2kg/包][样品]
+                        </view>
+                        <view class='fs30 fc-6'>x 99</view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            入库前库存：48987 入库后库存：2735
+                        </view>
+                    </view>
+                </view>
+                <view class='item mt20'>
+                    <view class='fbc'>
+                        <view class='fs30 lh2 fc-1'>
+                            新疆小核桃
+                        </view>
+                        <view class='fs30 fc-1'>￥99.23 </view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            [80][吐鲁番][2kg/包][样品]
+                        </view>
+                        <view class='fs30 fc-6'>x 99</view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            入库前库存：48987 入库后库存：2735
+                        </view>
+                    </view>
+                </view>
+                <view class='item mt20'>
+                    <view class='fbc'>
+                        <view class='fs30 lh2 fc-1'>
+                            新疆小核桃
+                        </view>
+                        <view class='fs30 fc-1'>￥99.23 </view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            [80][吐鲁番][2kg/包][样品]
+                        </view>
+                        <view class='fs30 fc-6'>x 99</view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            入库前库存：48987 入库后库存：2735
+                        </view>
+                    </view>
+                </view>
+                <view class='item mt20'>
+                    <view class='fbc'>
+                        <view class='fs30 lh2 fc-1'>
+                            新疆小核桃
+                        </view>
+                        <view class='fs30 fc-1'>￥99.23 </view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            [80][吐鲁番][2kg/包][样品]
+                        </view>
+                        <view class='fs30 fc-6'>x 99</view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            入库前库存：48987 入库后库存：2735
+                        </view>
+                    </view>
+                </view>
+                <view class='item mt20'>
+                    <view class='fbc'>
+                        <view class='fs30 lh2 fc-1'>
+                            新疆小核桃
+                        </view>
+                        <view class='fs30 fc-1'>￥99.23 </view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            [80][吐鲁番][2kg/包][样品]
+                        </view>
+                        <view class='fs30 fc-6'>x 99</view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            入库前库存：48987 入库后库存：2735
+                        </view>
+                    </view>
+                </view>
+                <view class='item mt20'>
+                    <view class='fbc'>
+                        <view class='fs30 lh2 fc-1'>
+                            新疆小核桃
+                        </view>
+                        <view class='fs30 fc-1'>￥99.23 </view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            [80][吐鲁番][2kg/包][样品]
+                        </view>
+                        <view class='fs30 fc-6'>x 99</view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            入库前库存：48987 入库后库存：2735
+                        </view>
+                    </view>
+                </view>
+                <view class='item mt20'>
+                    <view class='fbc'>
+                        <view class='fs30 lh2 fc-1'>
+                            新疆小核桃
+                        </view>
+                        <view class='fs30 fc-1'>￥99.23 </view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            [80][吐鲁番][2kg/包][样品]
+                        </view>
+                        <view class='fs30 fc-6'>x 99</view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            入库前库存：48987 入库后库存：2735
+                        </view>
+                    </view>
+                </view>
+                <view class='item mt20'>
+                    <view class='fbc'>
+                        <view class='fs30 lh2 fc-1'>
+                            新疆小核桃
+                        </view>
+                        <view class='fs30 fc-1'>￥99.23 </view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            [80][吐鲁番][2kg/包][样品]
+                        </view>
+                        <view class='fs30 fc-6'>x 99</view>
+                    </view>
+                    <view class='fbc'>
+                        <view class='fs26 lh15 fc-3'>
+                            入库前库存：48987 入库后库存：2735
+                        </view>
+                    </view>
+                </view>
+                <view class='fs24 fc-1 mt30 lh3 tr bb'>共4个品类
+                    <text class='fs28 fc-6'> 总价值：￥92796.56</text>
+                </view>
+                <view class='fbc lh2 mt30'>
+                    <view class='tl'>
+                        <view class='fs26 fc-3'>入库单号：</view>
+                        <view class='fs26 fc-3'>录入时间：</view>
+                        <view class='fs26 fc-3'>入库日期：</view>
+                    </view>
+                    <view class='tr'>
+                        <view class='fs24 fc-3'>201810071102100</view>
+                        <view class='fs24 fc-3'>2018-03-06 11:14:20</view>
+                        <view class='fs24 fc-3'>2018-02-01</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class='palb fs32 lh3 tc bc-3 fc' bindtap='MoreHandler'>更多操作</view>
+    <!--弹出层  -->
+    <view class='mask_box' wx:if="{{IsShowMore}}">
+        <view class='mask' bindtap='CanlerHandler'></view>
+        <view class='palb cuikun_box'>
+            <view class='fsc mb30' bindtap=''>
+                <image src='../../img/rk_ico_1.png' class='img-3 mr20'></image>
+                <view class='fs30 fc tc'>打印详情</view>
+            </view>
+            <view class='fsc tc mt10' bindtap='CanlerRuKuHandler'>
+                <image src='../../img/rk_ico_2.png' class='img-3 mr20'></image>
+                <view class='fs30 fc'>取消入库</view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,203 @@
+<!--pages/clients/index.wxml-->
+<view class='container'>
+<!--搜索框  -->
+    <view class='search_box m20 bc-1 br5'>
+        <view class='lh2 fbc'>
+            <view class='f-2 tr mr10'>
+                <image src='../../img/search.png' class='img-1'></image>
+            </view>
+            <view class='f-3'>
+                <input type='text' class='fs26 fc-3 lh2' placeholder='{{placeholdertext}}' bindfocus='SearchHandler'></input>
+            </view>
+        </view>
+    </view>
+    <!--tab选项  -->
+    <view class='tab_box fsc bc-1 lh2 tc pt10 pb10'>
+        <view class='f-2 fac'>
+            <view bindtap='ShowTab' data-tabindex='0' class='fc-3 fs30 {{tabIndex=="0"?"active":""}}'>客户</view>
+            <view bindtap='ShowTab' data-tabindex='1' class='fc-3 fs30 mr30 {{tabIndex=="1"?"active":""}}'>供应商</view>
+        </view>
+        <view class='pr30 bl'>
+            <navigator url='addclient' wx:if="{{tabIndex==0}}" hover-class='none' class='fc-3 fs30  ml30'>新增+</navigator>
+            <navigator url='addsupplier' wx:else hover-class='none' class='fc-3 fs30  ml30'>新增+</navigator>
+        </view>
+    </view>
+    <view class='pr30 pl30 bc-1 bt' wx:if='{{tabIndex==0}}'>
+        <navigator url='detail' class='fac bb lh3' hover-class='none'>
+            <view class='f-3'>
+                <view class='fsc'>
+                    <image src='../../img/Path.png' class='img-2 mr20'></image>
+                    <view class='fs28 fc-3 mr20'>散户</view>
+                </view>
+            </view>
+            <image src='../../img/direction.png' class='img-1 pr30'></image>
+        </navigator>
+    </view>
+    <swiper class="tab-content" current="{{tabIndex}}" duration="300" bindchange="switchTab" style="height:{{scrollHeight-120}}px;">
+        <swiper-item wx:for="{{[1,2]}}" wx:key="{{index}}">
+            <scroll-view scroll-y="true" scroll-into-view="{{toView}}" scroll-with-animation="true" class="pb100 bc-1" style="height:{{scrollHeight-120}}px;" bindscrolltolower="scrolltolower">
+                <block>
+                    <view class='item' id='A'>
+                        <view class='fs30 fc-2 lh2 bc-2 pl30'>A</view>
+                        <navigator url='{{navgatorIndex==0?"../kaidan/index":"detail"}}' class='fbc bc-1 ml30 mr30 bb pr30 pt10 pb10 '>
+                            <view class='f-3'>
+                                <view class='fsc'>
+                                    <view class='fs26 lh3 fc-2 ellipsis'>阿东阿东阿东阿东阿东阿东阿东阿东阿东阿东</view>
+                                    <view class='fc-3'>185****4568</view>
+                                </view>
+                            </view>
+                            <view class='fc bc-3 fs26 lh2 pl10 pr10' wx:if="{{tabIndex==0}}">可挂账</view>
+                            <view class='fc-6 fs26 lh2 tr' wx:else>待付：12394.90</view>
+                        </navigator>
+                        <navigator url='{{navgatorIndex==0?"../kaidan/index":"detail"}}' class='fbc bc-1 ml30 mr30 bb pr30 pt10 pb10 '>
+                            <view class='f-3'>
+                                <view class='fsc'>
+                                    <view class='fs26 lh3 fc-2 ellipsis'>阿东</view>
+                                    <view class='fc-3'>185****4568</view>
+                                </view>
+                            </view>
+                            <view class='fc bc-3 fs26 lh2 pl10 pr10' wx:if="{{tabIndex==0}}">可挂账</view>
+                            <view class='fc-6 fs26 lh2 tr' wx:else>待付：12394.90</view>
+                        </navigator>
+                    </view>
+                    <view class='item' id='B'>
+                        <view class='fs30 fc-2 lh2 bc-2 pl30'>B</view>
+                        <navigator url='{{navgatorIndex==0?"../kaidan/index":"detail"}}' class='fbc bc-1 ml30 mr30 bb pr30 pt10 pb10 '>
+                            <view class='f-3'>
+                                <view class='fsc'>
+                                    <view class='fs26 lh3 fc-2 ellipsis'>阿东阿东阿东阿东阿东阿东阿东阿东阿东阿东</view>
+                                    <view class='fc-3'>185****4568</view>
+                                </view>
+                            </view>
+                            <view class='fc fs26 lh2 pl10 pr10 bc-2' wx:if="{{tabIndex==0}}">不可挂账</view>
+                            <view class='fc-6 fs26 lh2 tr' wx:else>待付：12394.90</view>
+                        </navigator>
+                        <navigator url='{{navgatorIndex==0?"../kaidan/index":"detail"}}' class='fbc bc-1 ml30 mr30 bb pr30 pt10 pb10 '>
+                            <view class='f-3'>
+                                <view class='fsc'>
+                                    <view class='fs26 lh3 fc-2 ellipsis'>阿东</view>
+                                    <view class='fc-3'>185****4568</view>
+                                </view>
+                            </view>
+                            <view class='fc bc-3 fs26 lh2 pl10 pr10' wx:if="{{tabIndex==0}}">可挂账</view>
+                            <view class='fc-6 fs26 lh2 tr' wx:else>待付：12394.90</view>
+                        </navigator>
+                        <navigator url='{{navgatorIndex==0?"../kaidan/index":"detail"}}' class='fbc bc-1 ml30 mr30 bb pr30 pt10 pb10 '>
+                            <view class='f-3'>
+                                <view class='fsc'>
+                                    <view class='fs26 lh3 fc-2 ellipsis'>阿东阿东阿东阿东阿东阿东阿东阿东阿东阿东</view>
+                                    <view class='fc-3'>185****4568</view>
+                                </view>
+                            </view>
+                            <view class='fc bc-3 fs26 lh2 pl10 pr10' wx:if="{{tabIndex==0}}">可挂账</view>
+                            <view class='fc-6 fs26 lh2 tr' wx:else>待付：12394.90</view>
+                        </navigator>
+                        <navigator url='{{navgatorIndex==0?"../kaidan/index":"detail"}}' class='fbc bc-1 ml30 mr30 bb pr30 pt10 pb10 '>
+                            <view class='f-3'>
+                                <view class='fsc'>
+                                    <view class='fs26 lh3 fc-2 ellipsis'>阿东</view>
+                                    <view class='fc-3'>185****4568</view>
+                                </view>
+                            </view>
+                            <view class='fc bc-3 fs26 lh2 pl10 pr10' wx:if="{{tabIndex==0}}">可挂账</view>
+                            <view class='fc-6 fs26 lh2 tr' wx:else>待付：12394.90</view>
+                        </navigator>
+                    </view>
+                    <view class='item' id='C'>
+                        <view class='fs30 fc-2 lh2 bc-2 pl30'>C</view>
+                        <navigator url='{{navgatorIndex==0?"../kaidan/index":"detail"}}' class='fbc bc-1 ml30 mr30 bb pr30 pt10 pb10 '>
+                            <view class='f-3'>
+                                <view class='fsc'>
+                                    <view class='fs26 lh3 fc-2 ellipsis'>阿东阿东阿东阿东阿东阿东阿东阿东阿东阿东</view>
+                                    <view class='fc-3'>185****4568</view>
+                                </view>
+                            </view>
+                            <view class='fc bc-3 fs26 lh2 pl10 pr10' wx:if="{{tabIndex==0}}">可挂账</view>
+                            <view class='fc-6 fs26 lh2 tr' wx:else>待付：12394.90</view>
+                        </navigator>
+                        <navigator url='{{navgatorIndex==0?"../kaidan/index":"detail"}}' class='fbc bc-1 ml30 mr30 bb pr30 pt10 pb10 '>
+                            <view class='f-3'>
+                                <view class='fsc'>
+                                    <view class='fs26 lh3 fc-2 ellipsis'>阿东</view>
+                                    <view class='fc-3'>185****4568</view>
+                                </view>
+                            </view>
+                            <view class='fc bc-3 fs26 lh2 pl10 pr10' wx:if="{{tabIndex==0}}">可挂账</view>
+                            <view class='fc-6 fs26 lh2 tr' wx:else>待付：12394.90</view>
+                        </navigator>
+                        <navigator url='{{navgatorIndex==0?"../kaidan/index":"detail"}}' class='fbc bc-1 ml30 mr30 bb pr30 pt10 pb10 '>
+                            <view class='f-3'>
+                                <view class='fsc'>
+                                    <view class='fs26 lh3 fc-2 ellipsis'>阿东阿东阿东阿东阿东阿东阿东阿东阿东阿东</view>
+                                    <view class='fc-3'>185****4568</view>
+                                </view>
+                            </view>
+                            <view class='fc bc-3 fs26 lh2 pl10 pr10' wx:if="{{tabIndex==0}}">可挂账</view>
+                            <view class='fc-6 fs26 lh2 tr' wx:else>待付：12394.90</view>
+                        </navigator>
+                        <navigator url='{{navgatorIndex==0?"../kaidan/index":"detail"}}' class='fbc bc-1 ml30 mr30 bb pr30 pt10 pb10 '>
+                            <view class='f-3'>
+                                <view class='fsc'>
+                                    <view class='fs26 lh3 fc-2 ellipsis'>阿东</view>
+                                    <view class='fc-3'>185****4568</view>
+                                </view>
+                            </view>
+                            <view class='fc bc-3 fs26 lh2 pl10 pr10' wx:if="{{tabIndex==0}}">可挂账</view>
+                            <view class='fc-6 fs26 lh2 tr' wx:else>待付：12394.90</view>
+                        </navigator>
+                    </view>
+                    <view class='item' id='D'>
+                        <view class='fs30 fc-2 lh2 bc-2 pl30'>D</view>
+                        <navigator url='{{navgatorIndex==0?"../kaidan/index":"detail"}}' class='fbc bc-1 ml30 mr30 bb pr30 pt10 pb10 '>
+                            <view class='f-3'>
+                                <view class='fsc'>
+                                    <view class='fs26 lh3 fc-2 ellipsis'>阿东阿东阿东阿东阿东阿东阿东阿东阿东阿东</view>
+                                    <view class='fc-3'>185****4568</view>
+                                </view>
+                            </view>
+                            <view class='fc bc-3 fs26 lh2 pl10 pr10' wx:if="{{tabIndex==0}}">可挂账</view>
+                            <view class='fc-6 fs26 lh2 tr' wx:else>待付：12394.90</view>
+                        </navigator>
+                        <navigator url='{{navgatorIndex==0?"../kaidan/index":"detail"}}' class='fbc bc-1 ml30 mr30 bb pr30 pt10 pb10 '>
+                            <view class='f-3'>
+                                <view class='fsc'>
+                                    <view class='fs26 lh3 fc-2 ellipsis'>阿东</view>
+                                    <view class='fc-3'>185****4568</view>
+                                </view>
+                            </view>
+                            <view class='fc bc-3 fs26 lh2 pl10 pr10' wx:if="{{tabIndex==0}}">可挂账</view>
+                            <view class='fc-6 fs26 lh2 tr' wx:else>待付：12394.90</view>
+                        </navigator>
+                        <navigator url='{{navgatorIndex==0?"../kaidan/index":"detail"}}' class='fbc bc-1 ml30 mr30 bb pr30 pt10 pb10 '>
+                            <view class='f-3'>
+                                <view class='fsc'>
+                                    <view class='fs26 lh3 fc-2 ellipsis'>阿东阿东阿东阿东阿东阿东阿东阿东阿东阿东</view>
+                                    <view class='fc-3'>185****4568</view>
+                                </view>
+                            </view>
+                            <view class='fc bc-3 fs26 lh2 pl10 pr10' wx:if="{{tabIndex==0}}">可挂账</view>
+                            <view class='fc-6 fs26 lh2 tr' wx:else>待付：12394.90</view>
+                        </navigator>
+                        <navigator url='{{navgatorIndex==0?"../kaidan/index":"detail"}}' class='fbc bc-1 ml30 mr30 bb pr30 pt10 pb10 '>
+                            <view class='f-3'>
+                                <view class='fsc'>
+                                    <view class='fs26 lh3 fc-2 ellipsis'>阿东</view>
+                                    <view class='fc-3'>185****4568</view>
+                                </view>
+                            </view>
+                            <view class='fc bc-3 fs26 lh2 pl10 pr10' wx:if="{{tabIndex==0}}">可挂账</view>
+                            <view class='fc-6 fs26 lh2 tr' wx:else>待付：12394.90</view>
+                        </navigator>
+                    </view>
+                </block>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+    <!--右边栏  -->
+    <view class='part tr '>
+        <view class='fs24 fc-7 lh15 pr30' bindtouchmove='moveHandler' bindtap='moveHandler' data-opt="A">A</view>
+        <view class='fs24 fc-7 lh15 pr30' bindtouchmove='moveHandler' bindtap='moveHandler' data-opt="B">B</view>
+        <view class='fs24 fc-7 lh15 pr30' bindtouchmove='moveHandler' bindtap='moveHandler' data-opt="C">C</view>
+        <view class='fs24 fc-7 lh15 pr30' bindtouchmove='moveHandler' bindtap='moveHandler' data-opt="D">D</view>
+    </view>
+</view>

@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='ad_box pr mb20'>
+        <image src='../../img/bg.png' class='img-1' mode='aspectFill'></image>
+        <navigator url='../seting/index' class='part set_box'>
+            <image src='../../img/seting.png' class='img-2'></image>
+        </navigator>
+        <view class='parb text_box tr'>
+            <view class='fs30 lh25 fc-6'>生意从未如此省心</view>
+            <view class='fs20 lh15 fc'>极速开单 告别手写</view>
+            <view class='fs20 lh1 fc'>手机管店 省时省力</view>
+        </view>
+    </view>
+    <view class='nav_box center'>
+        <view class='fbc tc'>
+            <navigator url='../clients/index?navigatortype=1'>
+                <image src="../../img/kehu.png" mode='' class='img-3'></image>
+                <view class='lh2 fc-3'>客户管理</view>
+            </navigator>
+            <navigator url='../kucun/ruku?type=0'>
+                <image src="../../img/dingdan.png" mode='' class='img-3'></image>
+                <view class='lh2 fc-3'>补录订单</view>
+            </navigator>
+            <navigator url='../goods/index'>
+                <image src="../../img/shangpin.png" mode='' class='img-3'></image>
+                <view class='lh2 fc-3'>商品管理</view>
+            </navigator>
+        </view>
+        <navigator url='../clients/index?navigatortype=0' class='fac mt30 bc-3 lh3'>
+            <view class='faw'>
+                <image src='../../img/kaidan.png' class='img-4'></image>
+                <view class='fs26 fc'>交易开单</view>
+            </view>
+        </navigator>
+    </view>
+    <!--不可用  -->
+    <view class='mask' hidden='true'></view>
+</view>

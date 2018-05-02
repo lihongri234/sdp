@@ -1,0 +1,58 @@
+<!--pages/seting/store.wxml-->
+<view class='container' wx:if='{{!IsEdit}}'>
+  <view class='fbc bc-1 bb p30 mt20'>
+    <view>店铺LOGO</view>
+    <view class='fc-3'>
+    <image class='br-50' src='../../img/ico_1.png'></image>
+    </view>
+  </view>
+  <view class='fbc bc-1 bb p30'>
+    <view>店铺名称</view>
+    <view class='fc-3'>广州分店</view>
+  </view>
+  <view class='fbc bc-1 bb p30'>
+    <view>详细地址</view>
+    <view class='fc-3'>深圳市龙岗区平湖街道新立一路50号</view>
+  </view>
+  <view class='fbc bc-1 bb p30'>
+    <view>客服电话</view>
+    <view class='fc-3'>138888888888</view>
+  </view>
+  <view class='fbc bc-1 bb p30'>
+    <view>店铺简介</view>
+    <view class='fc-3'>卖卖菜</view>
+  </view>
+  
+  <button class='btn-orange mt30' bindtap='Edit'>编辑资料</button>
+</view>
+
+<view class='container' wx:if='{{IsEdit}}'>
+   <view class='fbc bc-1 bb p30 mt20'>
+    <view>店铺LOGO</view>
+    <view class='fc-3'>
+    <navigator>
+    <image class='br-50' src='../../img/ico_1.png'></image><text class='ff1'>></text> 
+    </navigator>
+    </view>
+  </view>
+    <view class='fsc bc-1 bb p30'>
+      <view class='f-1'>店铺名称</view>
+      <view class='f-2 fc-3'>
+        <input value='广州分店'></input>
+      </view>
+    </view>
+    <view class='fsc bc-1 bb p30'>
+      <view  class='f-1'>详细地址</view>
+      <input  class='f-2 fc-3' value='深圳市龙岗区平湖街道新立一路50号'></input>
+    </view>
+    <view class='fsc bc-1 bb p30'>
+      <view  class='f-1'>客服电话</view>
+      <input  class='f-2 fc-3' value='13888888888'></input>
+    </view>
+   <view class='fsc bc-1 bb p30'>
+      <view  class='f-1'>店铺简介</view>
+      <input  class='f-2 fc-3' value='卖卖菜'></input>
+    </view>
+
+   <button class='btn-orange mt30' bindtap='Edit'>提交</button>
+</view>

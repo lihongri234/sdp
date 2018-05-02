@@ -1,0 +1,145 @@
+<!--pages/dingdan/index.wxml-->
+<view class='container'>
+    <view class='search_box m20 bc-1 br5'>
+        <view class='lh2 fbc'>
+            <view class='f-1 tr mr10'>
+                <image src='../../img/search.png' class='img-1'></image>
+            </view>
+            <view class='f-3'>
+                <input type='text' class='fs26 fc-3 lh2' placeholder='搜索订单号/客户名称/联系电话' bindfocus='SearchHandler'></input>
+            </view>
+        </view>
+    </view>
+    <view class='tab_box fac bc-1 lh2 tc pt10 pb10 bb'>
+        <view bindtap='ShowTab' data-tabindex='0' class='fc-3 fs30 {{tabIndex=="0"?"active":""}}'>全部</view>
+        <view bindtap='ShowTab' data-tabindex='1' class='fc-3 fs30 pr {{tabIndex=="1"?"active":""}}'>待确认
+            <view class='part fs20'>8</view>
+        </view>
+        <view bindtap='ShowTab' data-tabindex='2' class='fc-3 fs30 {{tabIndex=="2"?"active":""}}'>待收货</view>
+        <view bindtap='SoltHandler' class='fc-3 fs30 pl30 bl'>筛选</view>
+    </view>
+    <swiper class="tab-content" current="{{tabIndex}}" duration="300" bindchange="switchTab" style="height:{{scrollHeight}}px;">
+        <swiper-item wx:for="{{[1,2,3]}}" wx:key="{{index}}">
+            <scroll-view scroll-y="true" class="pb100" style="height:{{scrollHeight}}px;" bindscrolltolower="scrolltolower">
+                <block>
+                    <view class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr bb lh3 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                            <view class='fs26 fc lh2 br50 pl20 pr20 active-1'>已取消</view>
+                            <view class='tips parb'>提示：已取消订单长按即可删除</view>
+                        </view>
+                        <navigator url='detail' class='border' hover-class='none'>
+                            <view class='p30 fbc '>
+                                <view class='f-3 '>
+                                    <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                                    <view class='fs26 lh2 fc-2 '>支付方式：
+                                        <text class='fc-6 '>现金</text>
+                                    </view>
+                                    <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                                    <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                                    <view class='fs26 lh25 fc-2 '>金额：1537.00</view>
+                                </view>
+                                <view>
+                                    <image src='../../img/direction.png ' class='img-1 '></image>
+                                </view>
+                            </view>
+                        </navigator>
+                    </view>
+                    <view class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr bb lh3 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                            <view class='fs26 fc lh2 br50 pl20 pr20 active-2'>待确认</view>
+                        </view>
+                        <navigator url='detail' class='border' hover-class='none'>
+                            <view class='p30 fbc '>
+                                <view class='f-3 '>
+                                    <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                                    <view class='fs26 lh2 fc-2 '>支付方式：
+                                        <text class='fc-6 '>现金</text>
+                                    </view>
+                                    <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                                    <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                                    <view class='fs26 lh25 fc-2 '>金额：1537.00</view>
+                                </view>
+                                <view>
+                                    <image src='../../img/direction.png ' class='img-1 '></image>
+                                </view>
+                            </view>
+                        </navigator>
+                    </view>
+                    <view class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr bb lh3 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                            <view class='fs26 fc lh2 br50 pl20 pr20 active-3'>待收货</view>
+                        </view>
+                        <navigator url='detail' class='border' hover-class='none'>
+                            <view class='p30 fbc '>
+                                <view class='f-3 '>
+                                    <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                                    <view class='fs26 lh2 fc-2 '>支付方式：
+                                        <text class='fc-6 '>现金</text>
+                                    </view>
+                                    <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                                    <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                                    <view class='fs26 lh25 fc-2 '>金额：1537.00</view>
+                                </view>
+                                <view>
+                                    <image src='../../img/direction.png ' class='img-1 '></image>
+                                </view>
+                            </view>
+                        </navigator>
+                    </view>
+                </block>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+    <!-- 筛选弹出层  -->
+    <view class='mask_box' wx:if="{{IsShowSlot}}">
+        <view class='mask'  bindtap='CanlerHandler'></view>
+        <view class='palt bc-1'>
+            <view class='tab_box fsc bc-1 lh2 tc pt10 pb10 bb'>
+                <view class='f-2 fac'>
+                    <view bindtap='ShowTab' data-tabindex='0' class='fc-3 fs30 {{tabIndex=="0"?"active":""}}'>全部</view>
+                    <view bindtap='ShowTab' data-tabindex='1' class='fc-3 fs30 mr30 {{tabIndex=="1"?"active":""}}'>待确认</view>
+                    <view bindtap='ShowTab' data-tabindex='2' class='fc-3 fs30 mr30 {{tabIndex=="2"?"active":""}}'>待收货</view>
+                </view>
+                <view class='pr30 bl' bindtap='CanlerHandler'>
+                    <view class='fc-3 fs30 ml30 fc-6'>筛选 </view>
+                </view>
+            </view>
+            <view class='bc-2 lh2 fs24 fc-3 pl30'>快速选择</view>
+            <view class='fbc btn_box bc-1 tc'>
+                <view class='f-1 fs24 {{DateIndex==0?"active":""}}' bindtap='SelectDateHandler' data-dateindex='0'>今天</view>
+                <view class='f-1 fs24 mr30 ml30 {{DateIndex==1?"active":""}}' bindtap='SelectDateHandler' data-dateindex='1'>昨天</view>
+                <view class='f-1 fs24 {{DateIndex==2?"active":""}}' bindtap='SelectDateHandler' data-dateindex='2'>本月</view>
+            </view>
+            <view class='bc-2 lh2 fs24 fc-3 pl30'>其他时间</view>
+            <view class='fbc bb p30 bc-1'>
+                <view class='f-1 fc-1 tl fs26'>开始时间</view>
+                <picker class='f-1' mode="date" value="{{startDate}}" fields="day" bindchange="bindStartDateChange">
+                    <view class='fac'>
+                        <view class="picker fs24 f-1 tr">
+                            {{startDate}}
+                        </view>
+                        <image src='../../img/direction.png' class='img-2'></image>
+                    </view>
+                </picker>
+            </view>
+            <view class='fbc p30 bb bc-1'>
+                <view class='f-3 fc-1 tl fs26'>结束时间</view>
+                <picker class='f-1' mode="date" value="{{endDate}}" fields="day" bindchange="bindEndDateChange">
+                    <view class='fac'>
+                        <view class="picker fs24 f-1 tr">
+                            {{endDate}}
+                        </view>
+                        <image src='../../img/direction.png' class='img-2'></image>
+                    </view>
+                </picker>
+            </view>
+            <view class='mt100 lh3 bc-1 fac'>
+                <view class='f-3 bc-1 pl30 fs26' bindtap='CanlerHandler'>重置筛选</view>
+                <view class='f-1 bc-3 fc lh3 tc fs36' bindtap='OKHandler'>完成</view>
+            </view>
+        </view>
+    </view>
+</view>

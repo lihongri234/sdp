@@ -1,0 +1,74 @@
+<!--pages/tongji/index.wxml-->
+<view class="container">
+    <!--四分类  -->
+    <view class='fbw bc-1 mb20'>
+        <view class='item tc bb br'>
+            <view class='fs36 lh2 fc-0'>134679</view>
+            <view class='fs24 fc-3'>今日成交笔数</view>
+        </view>
+        <view class='item tc bb br'>
+            <view class='fs36 lh2 fc-0'>134679</view>
+            <view class='fs24 fc-3'>今日销售额</view>
+        </view>
+        <view class='item tc bb br'>
+            <view class='fs36 lh2 fc-0'>134679</view>
+            <view class='fs24 fc-3'>昨日销售额</view>
+        </view>
+        <view class='item tc bb br'>
+            <view class='fs36 lh2 fc-0'>134679</view>
+            <view class='fs24 fc-3'>本月销售额</view>
+        </view>
+    </view>
+    <!--导航  -->
+    <view class='bc-1'>
+        <navigator url='month' class='ml20 mr20 lh3' hover-class='none'>
+            <view class='fsc bb'>
+                <image src='../../img/tj_ico_1.png' class='img-1'></image>
+                <view class='fs26 fc-2 f-3 ml20'>月度交易统计</view>
+                <image src='../../img/direction.png' class='img-2'></image>
+            </view>
+        </navigator>
+        <navigator url='product' class='ml20 mr20 lh3' hover-class='none'>
+            <view class='fsc bb'>
+                <image src='../../img/tj_ico_2.png' class='img-1'></image>
+                <view class='fs26 fc-2 f-3 ml20'>商品销售统计</view>
+                <image src='../../img/direction.png' class='img-2'></image>
+            </view>
+        </navigator>
+        <navigator url='kehu' class='ml20 mr20 lh3' hover-class='none'>
+            <view class='fsc bb'>
+                <image src='../../img/tj_ico_3.png' class='img-1'></image>
+                <view class='fs26 fc-2 f-3 ml20'>客户交易统计</view>
+                <image src='../../img/direction.png' class='img-2'></image>
+            </view>
+        </navigator>
+        <navigator url='profit' class='ml20 mr20 lh3' hover-class='none'>
+            <view class='fsc'>
+                <image src='../../img/tj_ico_4.png' class='img-1'></image>
+                <view class='fs26 fc-2 f-3 ml20'>利润报表</view>
+                <image src='../../img/direction.png' class='img-2'></image>
+            </view>
+        </navigator>
+    </view>
+    <view class='date_box p30 bc-1' hidden='ture'>
+        <view class='fbc mb30'>
+            <view bindtap='prevMonth' class='f-1 tr'>上一月</view>
+            <view class='f-2 tc'>{{fullData}}</view>
+            <view bindtap='nextMonth' class='f-1 tl'>下一月</view>
+        </view>
+        <view class='fac mb20'>
+            <view class='fs30 lh2'>日</view>
+            <view class='fs30 lh2'>一</view>
+            <view class='fs30 lh2'>二</view>
+            <view class='fs30 lh2'>三</view>
+            <view class='fs30 lh2'>四</view>
+            <view class='fs30 lh2'>五</view>
+            <view class='fs30 lh2'>六</view>
+        </view>
+        <view class='fsw day_box'>
+            <view wx:for="{{dayArr}}" wx:key="{{index}}" data-index='{{index}}' bindtap='selectday'>
+                <text class='{{item==day?"active":""}}'>{{item}}</text>
+            </view>
+        </view>
+    </view>
+</view>

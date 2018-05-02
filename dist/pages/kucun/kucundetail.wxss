@@ -1,0 +1,42 @@
+/* pages/kucun/kucundetail.wxss */
+.palb {
+    width: 100%;
+}
+
+.img-1 {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.fsc view.active{
+    background: #ff683e
+}
+.btn_box {
+    padding: 35rpx 30rpx;
+}
+
+.btn_box view {
+    width:30%;
+    height: 66rpx;
+    line-height: 66rpx;
+    border-radius: 50px;
+    margin-bottom: 30rpx;
+    border: 1px solid #c2c2c2;
+}
+.btn_box view.none{
+    border: none;
+}
+
+.btn_box view.active {
+    background: #ffe8e2;
+    color: #ff683e;
+    border: 1px solid #ff683e;
+}
+.palt {
+    z-index: 2;
+    width: 100%;
+}
+.mt100{
+    border-top: 1px solid #ff683e;
+    margin-top: 100rpx;
+}

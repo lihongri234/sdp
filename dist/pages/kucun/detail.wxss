@@ -1,0 +1,4 @@
+/* pages/kucun/detail.wxss */
+.container,page{
+    height: 100%;
+}

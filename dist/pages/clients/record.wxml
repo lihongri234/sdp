@@ -1,0 +1,23 @@
+<!--pages/clients/record.wxml-->
+<view class='container'>
+    <view class='mt10 pl30 bc-1 pb30'>
+        <view class='fs26 fc-2 pl20'>清款金额：200.00</view>
+        <view class='fs26 fc-2 pl20'>清款时间：2018-03-19 14:12:10</view>
+        <view class='fs26 fc-2 pl20'>备注信息：欠的多，少拿两条鱼</view>
+    </view>
+    <view class='pl30 fs26 lh25 fc-3'>
+        清款订单（2个订单）：
+    </view>
+    <navigator url='' class='pl30 bc-1 pb30 pr pt20 mb10'>
+        <view class='fs26 fc-2'>清款金额：200.00</view>
+        <view class='fs26 fc-2'>清款时间：2018-03-19 14:12:10</view>
+        <view class='fs26 fc-6'>备注信息：欠的多，少拿两条鱼</view>
+        <image src='../../img/direction.png' class='img-2 part'></image>
+    </navigator>
+    <navigator url='' class='pl30 bc-1 pb30 pr pt20 mb10'>
+        <view class='fs26 fc-2'>清款金额：200.00</view>
+        <view class='fs26 fc-2'>清款时间：2018-03-19 14:12:10</view>
+        <view class='fs26 fc-6'>备注信息：欠的多，少拿两条鱼</view>
+        <image src='../../img/direction.png' class='img-2 part'></image>
+    </navigator>
+</view>

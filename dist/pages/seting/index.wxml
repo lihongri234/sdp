@@ -1,0 +1,37 @@
+<!--pages/seting/index.wxml-->
+<view  class='container'>
+
+    <navigator class="fbc p30 bc-1 bb mt20" url='/pages/seting/store'>
+      <view class='text'> <image src='../../img/set_ico_1.png'></image> 店铺资料</view>
+      <view class='fc-3 ff1'>></view>
+    </navigator>
+    <navigator class="fbc p30 bc-1 bb">
+      <view class='text'><image src='../../img/set_ico_2.png'></image>当前账号</view>
+      <view class='fc-3'>1388888888</view>
+    </navigator>
+    <navigator class="fbc p30 bc-1 bb" url='/pages/seting/updatepass'>
+      <view class='text'><image src='../../img/set_ico_3.png'></image>修改密码</view>
+      <view class='fc-3 ff1'>></view>
+    </navigator>
+    <navigator class="fbc p30 bc-1 bb" url='/pages/seting/staffmanage'>
+      <view class='text'><image src='../../img/set_ico_4.png'></image>员工管理</view>
+      <view class='fc-3 ff1'>></view>
+    </navigator>
+    <navigator class="fbc p30 bc-1 bb" url='/pages/seting/bossinfo'>
+      <view class='text'><image src='../../img/set_ico_5.png'></image>老板信息</view>
+      <view class='fc-3 ff1'>></view>
+    </navigator>
+    <navigator class="fbc p30 bc-1 bb" url='/pages/seting/systemsetup'>
+      <view class='text'><image src='../../img/set_ico_6.png'></image>系统设置</view>
+      <view class='fc-3 ff1'>></view>
+    </navigator>
+    <navigator class="fbc p30 bc-1 bb mt20" url='/pages/seting/feedback'>
+      <view class='text'>反馈信息</view>
+      <view class='fc-3 ff1'>></view>
+    </navigator>
+    <navigator class="fbc p30 bc-1 bb" url='/pages/seting/updatepass'>
+      <view class='text'>关于我们</view>
+      <view class='fc-3 ff1'>></view>
+    </navigator>
+
+</view>

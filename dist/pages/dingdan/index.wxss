@@ -1,0 +1,93 @@
+/* pages/dingdan/index.wxss */
+
+.img-1 {
+    width: 28rpx;
+    height: 28rpx;
+}
+
+.img-2 {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.tab_box {
+    border-top: 2px dashed #efeff4;
+}
+
+.tab_box view.active {
+    color: #000;
+    border-bottom: 8rpx solid #ff683e;
+}
+
+.tab_box .part {
+    background: red;
+    width: 30rpx;
+    height: 30rpx;
+    line-height: 30rpx;
+    border-radius: 50%;
+    color: #fff;
+    right: -20rpx;
+}
+
+.tips {
+    background: #fff9e3;
+    color: #ff683e;
+    font-size: 16rpx;
+    line-height: 1.8;
+    padding: 0 40rpx;
+    bottom: -30rpx;
+    right: -30rpx;
+}
+
+.item_box .border {
+    border-bottom: 5px dashed #efeff4;
+}
+
+.item_box:last-child .border {
+    border: 0;
+}
+
+.active-1 {
+    background: #b3b3b3;
+}
+
+.active-2 {
+    background: #ff997c;
+}
+
+.active-3 {
+    background: #fff;
+    color: #ff997c;
+    border: 1px solid #ff997c;
+}
+
+.pb100 {
+    padding-bottom: 200rpx;
+}
+
+.btn_box {
+    padding: 35rpx 30rpx;
+}
+
+.btn_box view {
+    height: 66rpx;
+    line-height: 66rpx;
+    border-radius: 50px;
+    border: 1px solid #c2c2c2;
+}
+
+.btn_box view.active {
+    background: #ffe8e2;
+    color: #ff683e;
+    border: 1px solid #ff683e;
+}
+
+.palt {
+    z-index: 2;
+    width: 100%;
+}
+
+.mt100 {
+    border-top: 1px solid #ff683e;
+    margin-top: 100rpx;
+}

@@ -1,0 +1,5 @@
+/* pages/kucun/kucun.wxss */
+.img-1 {
+    width: 30rpx;
+    height: 30rpx;
+}

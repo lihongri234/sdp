@@ -1,0 +1,10 @@
+/* pages/kucun/index.wxss */
+
+.img-1 {
+    height: 70rpx;
+    width: 70rpx;
+}
+.bc-1{
+    width: 48%;
+}
+

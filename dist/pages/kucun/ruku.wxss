@@ -1,0 +1,50 @@
+/* pages/kucun/ruku.wxss */
+
+.day_box {
+    width: 100%;
+}
+
+.lh3 {
+    line-height: 3.2;
+}
+
+.day_box view {
+    width: 14.28%;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 30rpx;
+    border-radius: 50%;
+}
+
+.day_box view text {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+}
+
+.day_box view text.active {
+    background: #ff683e;
+    color: #fff;
+}
+
+.item {
+    width: 50%;
+    padding: 42rpx 0;
+}
+
+.img-1 {
+    height: 30rpx;
+    width: 30rpx;
+}
+
+.right {
+    transform: rotate(180deg);
+}
+
+.img-2 {
+    height: 50rpx;
+    width: 50rpx;
+}

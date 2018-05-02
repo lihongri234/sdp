@@ -1,0 +1,15 @@
+/* pages/seting/index.wxss */
+.text image{
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 8rpx;
+  vertical-align:middle;
+}
+
+.content{
+  color:#C7C7CC;
+}
+
+/* .ff1{
+  font-family:"黑体",sans-serif;
+} */

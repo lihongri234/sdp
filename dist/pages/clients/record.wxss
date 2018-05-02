@@ -1,0 +1,9 @@
+/* pages/clients/record.wxss */
+.img-2 {
+    width: 30rpx;
+    height: 30rpx;
+}
+.part{
+    top: 20rpx;
+    right: 30rpx;
+}

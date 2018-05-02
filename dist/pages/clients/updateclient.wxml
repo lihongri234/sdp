@@ -1,0 +1,39 @@
+<!--pages/clients/updateclient.wxml-->
+<view class='container pt20 bc-1'>
+    <form bindsubmit='saveHandler'>
+        <view class='lh25 bb pl30 fsc bc-1 pt10 pb10'>
+            <view class='pl20 fc-1 fs28 f-1'>客户姓名
+                <text class='fc-6 fs28'>*</text>
+            </view>
+            <view class='f-3'>
+                <input type='text' placeholder='姓名' name="name" maxlength='10' class='fs28 fc-2' value='{{name}}'></input>
+            </view>
+        </view>
+        <view class='lh25 bb pl30 fsc bc-1 pt10 pb10'>
+            <view class='pl20 fc-1 fs28 f-1'>联系电话</view>
+            <view class='f-3'>
+                <input type='number' placeholder='手机或固话' name="phone" maxlength='13' class='fs28 fc-2' value='{{phone}}'></input>
+            </view>
+        </view>
+        <view class='lh25 bb pl30 fsc bc-1 pt10 pb10'>
+            <view class='pl20 fc-1 fs28 f-1'>客户备注</view>
+            <view class='f-3'>
+                <input type='text' placeholder='备注信息' name="remark" maxlength='20' class='fs28 fc-2' value='{{remark}}'></input>
+            </view>
+        </view>
+        <view class='lh25 bb pl30 fsc bc-1 pt10 pb10'>
+            <view class='pl20 fc-1 fs28 f-1'>收货地址</view>
+            <view class='f-3'>
+                <input type='text' placeholder='街道门牌号' name="address" maxlength='20' class='fs28 fc-2' value='{{address}}'></input>
+            </view>
+        </view>
+        <view class='lh25 bb pl30 fsc bc-1 pt10 pb10'>
+            <view class='pl20 fc-1 fs28 f-1'>允许挂账</view>
+            <view class='f-3'>
+                <switch checked="{{isguazhang}}" color='#ff683e' name="isguazhang" />
+            </view>
+        </view>
+        <button class='btn-orange mt30' formType='submit'>保存</button>
+        <button class='bc-2 btn-orange mt30 '>删除客户</button>
+    </form>
+</view>

@@ -1,0 +1,18 @@
+/* pages/kucun/pandian.wxss */
+
+.container, page {
+    height: 100%;
+}
+
+.palb {
+    width: 100%;
+}
+
+.img-1 {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.fsc view.active{
+    background: #ff683e
+}

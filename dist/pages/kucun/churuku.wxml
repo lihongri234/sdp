@@ -1,0 +1,410 @@
+<!--pages/kucun/churuku.wxml-->
+<view class='container'>
+    <view class='search_box m20 bc-1 br5'>
+        <view class='lh2 fbc'>
+            <view class='f-2 tr mr10'>
+                <image src='../../img/search.png' class='img-1'></image>
+            </view>
+            <view class='f-3'>
+                <input type='text' class='fs26 fc-3 lh2' placeholder='{{placeholdertext}}' bindfocus='SearchHandler'></input>
+            </view>
+        </view>
+    </view>
+    <view class='tab_box fac bc-1 lh2 tc pt10 pb10 bb'>
+        <view bindtap='ShowTab' data-tabindex='0' class='fc-3 fs30 {{tabIndex=="0"?"active":""}}'>入库</view>
+        <view bindtap='ShowTab' data-tabindex='1' class='fc-3 fs30 {{tabIndex=="1"?"active":""}}'>报损</view>
+        <view bindtap='ShowTab' data-tabindex='2' class='fc-3 fs30 {{tabIndex=="2"?"active":""}}'>开单</view>
+        <view bindtap='SoltHandler' class='fc-3 fs30 bl pl30'>筛选</view>
+    </view>
+    <swiper class="tab-content" current="{{tabIndex}}" duration="300" bindchange="switchTab" style="height:{{scrollHeight-99}}px;">
+        <!--入库  -->
+        <swiper-item>
+            <scroll-view scroll-y="true" class="pb100" style="height:{{scrollHeight-99}}px;" bindscrolltolower="scrolltolower">
+                <block>
+                    <navigator url='rukudetail' class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-6'>进货入库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>入库单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>入库品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url='rukudetail' class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-6'>进货入库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>入库单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>入库品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url='rukudetail' class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-6'>进货入库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>入库单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>入库品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url='rukudetail' class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-6'>进货入库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>入库单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>入库品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url='rukudetail' class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-6'>进货入库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>入库单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>入库品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url='rukudetail' class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-6'>进货入库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>入库单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>入库品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url='rukudetail' class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-6'>进货入库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>入库单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>入库品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url='rukudetail' class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-6'>进货入库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>入库单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>入库品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url='rukudetail' class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-6'>进货入库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>入库单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>入库品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                </block>
+            </scroll-view>
+        </swiper-item>
+        <!--报损  -->
+        <swiper-item>
+            <scroll-view scroll-y="true" class="pb100" style="height:{{scrollHeight-99}}px;" bindscrolltolower="scrolltolower">
+                <block>
+                    <navigator url='rukudetail' class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>报损出库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>报损单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>报损品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url='rukudetail' class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>报损出库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>报损单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>报损品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url='rukudetail' class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>报损出库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>报损单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>报损品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url='rukudetail' class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>报损出库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>报损单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>报损品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url='rukudetail' class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>报损出库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>报损单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>报损品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url="rukudetail" class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>报损出库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>报损单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>报损品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url="rukudetail" class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>报损出库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>报损单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>报损品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url="rukudetail" class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>报损出库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>报损单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>报损品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url="rukudetail" class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>报损出库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>报损单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>报损品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url="rukudetail" class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>报损出库
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>报损单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>报损品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                </block>
+            </scroll-view>
+        </swiper-item>
+        <!-- 开单 -->
+        <swiper-item>
+            <scroll-view scroll-y="true" class="pb100" style="height:{{scrollHeight-99}}px;" bindscrolltolower="scrolltolower">
+                <block>
+                    <navigator url="rukudetail" class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>开单销售
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fs26 fc-3 tl'>联系人 ：李老板</view>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>销售单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>销售品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url="rukudetail" class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>开单销售
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fs26 fc-3 tl'>联系人 ：李老板</view>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>销售单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>销售品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url="rukudetail" class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>开单销售
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fs26 fc-3 tl'>联系人 ：李老板</view>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>销售单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>销售品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url="rukudetail" class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>开单销售
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fs26 fc-3 tl'>联系人 ：李老板</view>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>销售单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>销售品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url="rukudetail" class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>开单销售
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fs26 fc-3 tl'>联系人 ：李老板</view>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>销售单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>销售品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url="rukudetail" class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>开单销售
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fs26 fc-3 tl'>联系人 ：李老板</view>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>销售单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>销售品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                    <navigator url="rukudetail" class='item_box bc-1 mb10' bindlongtap='delHandler' data-index='{{item.index}}'>
+                        <view class='fbc pr lh2 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-5'>开单销售
+                                <text class='fs22 fc-3 ml20'>2018-01-19 18:11:17录入</text>
+                                <view class='fs26 fc-3 tl'>联系人 ：李老板</view>
+                                <view class='fbc'>
+                                    <view class='fs26 fc-3 tl mr30'>销售单号：498465146789</view>
+                                    <view class='fs26 fc-3 tl'>销售品种：1种</view>
+                                </view>
+                            </view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </navigator>
+                </block>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+    <!-- 筛选弹出层  -->
+    <view class='mask_box' wx:if="{{IsShowSlot}}">
+        <view class='mask' bindtap='CanlerHandler'></view>
+        <view class='palt bc-1 '>
+            <view class='tab_box fsc bc-1 lh2 tc pt10 pb10 bb'>
+                <view class='f-2 fac'>
+                    <view bindtap='ShowTab' data-tabindex='0' class='fc-3 fs30 {{tabIndex=="0"?"active":""}}'>入库</view>
+                    <view bindtap='ShowTab' data-tabindex='1' class='fc-3 fs30 mr30 {{tabIndex=="1"?"active":""}}'>报损</view>
+                    <view bindtap='ShowTab' data-tabindex='2' class='fc-3 fs30 mr30 {{tabIndex=="2"?"active":""}}'>开单</view>
+                </view>
+                <view class='pr30 bl' bindtap='CanlerHandler'>
+                    <view class='fc-3 fs30 ml30 fc-6'>筛选 </view>
+                </view>
+            </view>
+            <view class='bc-2 lh2 fs24 fc-3 pl30'>快速选择</view>
+            <view class='fbc btn_box bc-1 tc'>
+                <view class='f-1 fs24 active'>今天</view>
+                <view class='f-1 fs24 mr30 ml30'>昨天</view>
+                <view class='f-1 fs24'>本月</view>
+            </view>
+            <view class='bc-2 lh2 fs24 fc-3 pl30'>其他时间</view>
+            <view class='fbc bb p30 bc-1'>
+                <view class='f-1 fc-1 tl fs26'>开始时间</view>
+                <picker class='f-1' mode="date" value="{{startDate}}" fields="day" bindchange="bindStartDateChange">
+                    <view class='fac'>
+                        <view class="picker fs24 f-1 tr">
+                            {{startDate}}
+                        </view>
+                        <image src='../../img/direction.png' class='img-2'></image>
+                    </view>
+                </picker>
+            </view>
+            <view class='fbc p30 bb bc-1'>
+                <view class='f-3 fc-1 tl fs26'>结束时间</view>
+                <picker class='f-1' mode="date" value="{{endDate}}" fields="day" bindchange="bindEndDateChange">
+                    <view class='fac'>
+                        <view class="picker fs24 f-1 tr">
+                            {{endDate}}
+                        </view>
+                        <image src='../../img/direction.png' class='img-2'></image>
+                    </view>
+                </picker>
+            </view>
+            <view class='mt100 lh3 bc-1 fac'>
+                <view class='f-3 bc-1 pl30 fs26' bindtap='CanlerHandler'>重置筛选</view>
+                <view class='f-1 bc-3 fc lh3 tc fs36' bindtap='OKHandler'>完成</view>
+            </view>
+        </view>
+    </view>
+</view>

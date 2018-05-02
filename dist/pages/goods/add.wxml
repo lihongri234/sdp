@@ -1,0 +1,110 @@
+<!--pages/goods/add.wxml-->
+<!--pages/goods/edit.wxml-->
+<view class='container'>
+  <view class='fbc bc-1 p-20-30 bb mt20'>
+    <view class='f-1 tc'>商品名称</view>
+    <view class='f-3 pl30'>
+      <input class='fc-3' type='text' placeholder='请输入商品名称'></input>
+    </view>
+  </view>
+  <view class='fbc bc-1 p-20-30 bb'>
+    <view class='f-1 tc'>成本价格</view>
+    <view class='f-3 pl30'>
+      <input class='fc-6' type='text' placeholder='请输入成本价格'></input>
+    </view>
+  </view>
+  <view class='fbc bc-1 p-20-30 bb'>
+    <view class='f-1 tc'>初期库存</view>
+    <view class='f-3 pl30'>
+      <input class='fc-6' type='text' placeholder='请输入初期库存'></input>
+    </view>
+  </view>
+  <view class='fbc bc-1 p-20-30 bb'>
+    <view class='f-1 tc'>销售价格</view>
+    <view class='f-3 pl30'>
+      <input class='fc-6' type='text' placeholder='请输入销售价格'></input>
+    </view>
+  </view>
+
+  <view class='fbc bc-1 p30 bb' bindtap='selectCategory'>
+    <view class='pl20'>商品分类</view>
+    <view class='pl20 fc-3'>></view>
+  </view>
+
+  <view class=' bc-1 p-20-30 bb'>
+    <view class='pl20 pb20'>商品图片</view>
+    <view class='page fsc p20 bc-2'>
+      <image class='f-1' src='../../img/add.png' mode='aspecFit'></image>
+      <text class='f-3 fc-3'>点击上传/拍摄 商品照片</text>
+    </view>
+  </view>
+    <view class='fbc bc-1 p-20-30 bb'>
+    <view class='f-1 tc'>商品编号</view>
+    <view class='f-3 pl30'>
+      <input class='fc-3' type='text' placeholder='请输入商品编号' value='1002'></input>
+    </view>
+  </view>
+  <view class='fbc bc-1 p-20-30 bb'>
+    <view class='f-1 tc'>单　　位</view>
+    <view class='f-3 pl30'>
+      <input class='fc-3' type='text' placeholder='请输入单位' value='件'></input>
+    </view>
+  </view>
+  <view class='fbc bc-1 p-20-30 bb'>
+    <view class='f-1 tc'>规　　格</view>
+    <view class='f-3 pl30'>
+      <input class='fc-3' type='text' placeholder='请输入规格' value='12.5kg/件'></input>
+    </view>
+  </view>
+   <view class='fbc bc-1 p-20-30 bb'>
+    <view class='f-1 tc'>产　　地</view>
+    <view class='f-3 pl30'>
+      <input class='fc-3' type='text' placeholder='请输入产地' value='海南三亚'></input>
+    </view>
+  </view>
+   <view class='fbc bc-1 p-20-30 bb'>
+    <view class='f-1 tc'>品　　牌</view>
+    <view class='f-3 pl30'>
+      <input class='fc-3' type='text' placeholder='请输入品牌' value='娃哈哈'></input>
+    </view>
+  </view>
+
+      <button class='btn-orange  mt30' bindtap='add'>保存并上架</button>
+
+
+  <!--分类-->
+  <view class='model mask pt20' wx:if='{{IsModel}}'>
+    <!--选择分类-->
+    <view class='model-body bc-1 br5' wx:if='{{!IsaddCategory}}'>
+      <view class='p30 tc fs40'>选择分类</view>
+      <view class='categorylist fsw'>
+        <view class='categoryitem actvie'>水果</view>
+        <view class='categoryitem'>水果</view>
+        <view class='categoryitem'>粮油副食</view>
+        <view class='categoryitem'>水果</view>
+        <view class='categoryitem'>水果</view>
+        <view class='categoryitem'>禽蛋肉</view>
+        <view class='categoryitem'>水果</view>
+        <view class='categoryitem'>水果</view>
+        <view class='categoryitem add' bindtap='addCategory'>+</view>
+      </view>
+      <view class='pt30 pb30 tc fc-6'>提示：长按自定义分类即可删除</view>
+    </view>
+    <!--添加分类-->
+    <view class='model-body bc-1 br5' wx:if='{{IsaddCategory}}'>
+      <view class='p30 tc fs40'>新增分类</view>
+      <view class='m-20-30 br5 fsc model-row p-20-30'>
+        <view class='f-1'>分类名称</view>
+        <input class='f-2' placeholder='请输入分类名称'></input>
+      </view>
+      <view class='fac p30'>
+        <button class='btn-orange ml30 mr30' style='width:50%;' bindtap='saveCategory'>保存</button>
+      </view>
+      
+    </view>
+
+  </view>
+
+
+
+</view>

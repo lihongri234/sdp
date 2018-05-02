@@ -1,0 +1,25 @@
+<!--pages/seting/updatepass.wxml-->
+ <view class='container'>
+ <text class='fs30 pl30 lh3 fc-3'>修改登录密码</text>
+ <view class='fbc bc-1 p30 bb'>
+    <view class='f-1 tc'>输入旧密码</view>
+    <view class='f-2'>
+      <input class='fc-3' type='text' placeholder='请输入旧密码'></input>
+    </view>
+ </view>
+  <view class='fbc bc-1 p30 bb'>
+    <view class='f-1 tc'>输入新密码</view>
+    <view class='f-2'>
+      <input class='fc-3' type='text' placeholder='输入新密码'></input>
+    </view>
+ </view>
+  <view class='fbc bc-1 p30 bb'>
+    <view class='f-1 tc'>确认新密码</view>
+    <view class='f-2'>
+      <input class='fc-3' type='text' placeholder='确认新密码'></input>
+    </view>
+ </view>
+
+<button class='btn-orange mt30'>确认</button>
+
+</view>

@@ -1,0 +1,41 @@
+/* pages/goods/info.wxss */
+.container{
+  height: 100%;
+}
+.box{
+  height: 500rpx;
+}
+.box .desc{
+  width: 100%;
+  height: 150rpx;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.operat{
+    background-color: #FF8665;
+    color:#fff;
+    width: 100%;
+    height:120rpx;
+    line-height:120rpx;
+    font-size: 36rpx;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.operatlist{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 200rpx;
+}
+.operatlist .item {
+  width: 50%;
+  margin: 20rpx auto;
+  color:#fff;
+}
+.operatlist .item image{
+  width: 150rpx;
+  height: 150rpx;
+  display: inline-block;
+}

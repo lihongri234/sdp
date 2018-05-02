@@ -1,0 +1,46 @@
+/* pages/clients/index.wxss */
+
+page {
+    height: 100%;
+}
+
+.img-1 {
+    height: 30rpx;
+    width: 30rpx;
+}
+
+.img-2 {
+    height: 45rpx;
+    width: 45rpx;
+}
+
+.tab_box {
+    border-top: 2px dashed #efeff4;
+}
+
+.tab_box view.active {
+    color: #000;
+    border-bottom: 8rpx solid #ff683e;
+}
+
+.part {
+    width: 150rpx;
+    position: fixed;
+    top: 50%;
+    transform: translate(0,-50%)
+}
+
+.fc-7 {
+    color: #188af5;
+}
+
+.ellipsis {
+    width: auto;
+    max-width: 240rpx;
+}
+
+.part view.active {
+    /* margin-right: 30rpx; */
+    font-size: 30rpx;
+    color: #ff683e;
+}

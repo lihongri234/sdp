@@ -1,0 +1,29 @@
+/* pages/tongji/month.wxss */
+page{
+    background: #fff;
+}
+.img-1 {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.palt {
+    z-index: 2;
+    width: 100%;
+}
+
+.month view {
+    width: 200rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    margin: 15rpx 10rpx;
+    border: 1px solid #e5e5e5;
+}.month view.active {
+    background: #ffe8e2;
+    border: 1px solid #ffe8e2;
+    color: #ff683e;
+}
+.mt100{
+    border-top: 1px solid #ff683e;
+    margin-top: 100rpx;
+}

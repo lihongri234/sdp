@@ -1,0 +1,47 @@
+<!--pages/seting/bossinfo.wxml-->
+<view class='container'>
+    <view class='fbc p30 bc-1 bb mt20 ' bindtap='delete'>
+      <view>张老板</view>
+      <view class='fc-3'>15978456321</view>
+    </view>
+    <view class='fbc p30 bc-1 bb ' bindtap='delete'>
+      <view>张老板</view>
+      <view class='fc-3'>15978456321</view>
+    </view>
+    <view class='fbc p30 bc-1 bb ' bindtap='delete'>
+      <view>张老板</view>
+      <view class='fc-3'>15978456321</view>
+    </view>
+    <view class='fbc p30 bc-1 bb ' bindtap='delete'>
+      <view>张老板</view>
+      <view class='fc-3'>15978456321</view>
+    </view>
+    <view class='fbc p30 bc-1 bb ' bindtap='delete'>
+      <view>张老板</view>
+      <view class='fc-3'>15978456321</view>
+    </view>
+    <text class='fc-6 fac'>
+    提示：设置老板账户可以方便（他/她）在管理端查看店铺数据， 
+    </text>
+    <text  class='fc-6 fac'>可添加多个老板，长按即可删除。</text>
+    <button class='btn-orange  mt30' bindtap='add'>新增老板</button>
+
+    <view class='model mask pt20' wx:if='{{IsModel}}'>
+      <view class='model-body bc-1 br5'>
+        <view class='p30 tc fs40'>新增老板信息</view>
+        <view class='m-20-30 br5 fsc model-row p-20-30'>
+          <view class='f-1'>老板名称</view>
+          <input class='f-2' placeholder='请输入老板名称'></input>
+        </view>
+        <view class='m-20-30 br5 fsc model-row p-20-30'>
+          <view class='f-1'>老板手机</view>
+          <input class='f-2' placeholder='请输入手机号' value='15987654321'></input>
+        </view>
+        <view class='fac mt30 bt'>
+          <view class='f-1 tc p30' bindtap='cancel'>取消</view>
+          <view class='f-1 tc p30 bl fc-6'>确定</view>
+        </view>
+      </view>
+    </view>
+
+</view>

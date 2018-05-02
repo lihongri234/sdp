@@ -1,0 +1,54 @@
+/* pages/index/index.wxss */
+
+page {
+    background: #303030;
+}
+
+.ad_box {
+    width: 100%;
+    height: 600rpx;
+}
+
+.text_box {
+    right: 86rpx;
+    bottom: 130rpx;
+}
+
+.set_box {
+    right: 50rpx;
+    top: 24rpx;
+}
+
+.img-1 {
+    height: 600rpx;
+    width: 100%;
+}
+
+.img-2 {
+    height: 66rpx;
+    width: 66rpx;
+}
+
+.img-3 {
+    height: 112rpx;
+    width: 112rpx;
+}
+
+.img-4 {
+    height: 70rpx;
+    width: 70rpx;
+}
+
+.nav_box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fac {
+    height: 112rpx;
+    border-radius: 20px;
+}
+
+.faw {
+    width: 210rpx;
+}

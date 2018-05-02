@@ -1,0 +1,33 @@
+<!--pages/seting/staffauth.wxml-->
+<view class='container'>
+
+<view class='p30 fbc bc-1 mt20'>
+  <view>全部权限</view>
+  <view><checkbox color='#FF8665' checked='true'></checkbox></view>
+</view>
+<view class='p30 fbc bc-1 mt20 bb'>
+  <view>销售开单</view>
+  <view><checkbox color='#FF8665'></checkbox></view>
+</view>
+<view class='p30 fbc bc-1'>
+  <view>当前账号</view>
+  <view><checkbox color='#FF8665'></checkbox></view>
+</view>
+<view class='p30 fbc bc-1 mt20'>
+  <view>修改密码</view>
+  <view><checkbox color='#FF8665'></checkbox></view>
+</view>
+<view class='p30 fbc bc-1 mt20'>
+  <view>员工管理</view>
+  <view><checkbox color='#FF8665'></checkbox></view>
+</view>
+<view class='p30 fbc bc-1 mt20'>
+  <view>老板信息</view>
+  <view><checkbox color='#FF8665'></checkbox></view>
+</view>
+<view class='p30 fbc bc-1 mt20'>
+  <view>系统设置</view>
+  <view><checkbox color='#FF8665'></checkbox></view>
+</view>
+  <button class='btn-orange mt30'>保存信息</button>
+</view>

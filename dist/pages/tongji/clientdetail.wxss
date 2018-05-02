@@ -1,0 +1,21 @@
+/* pages/tongji/clientdetail.wxss */
+page {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+.fs16 {
+    font-size: 16rpx;
+    background: #fff9e3;
+}
+
+.palb {
+    width: 100%;
+}
+
+.pb200 {
+    padding-bottom: 200rpx;
+}

@@ -1,0 +1,61 @@
+.container{
+  height: auto;
+  overflow-y: hidden;
+}
+input{
+  height: auto;
+}
+.search text{
+  font-size:36rpx;
+
+}
+.active{
+  color:#000;
+  border-bottom: 9rpx solid #FF683E;
+}
+
+.goods{
+  background-color: #fff;
+  padding: 20rpx 30rpx;
+}
+
+.goods .img image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.btn-update{
+display:  inline-block;
+width:120rpx;
+height: 50rpx;
+line-height: 40rpx;
+font-size: 24rpx;
+text-align:  center;
+border: 1rpx solid  #FF8665;
+color: #FF8665;
+border-radius: 50rpx;
+}
+.btn-Top{
+display:  inline-block;
+width:80rpx;
+height: 60rpx;
+font-size: 24rpx;
+margin-left: 20rpx;
+color: #FF8665;
+}
+.btn-fc{
+  color: #B3B3B3;
+}
+
+.model{
+  z-index: 999;
+}
+.model-body{
+  width:90%;
+  height: auto;
+  position: absolute;
+  left: 5%;
+  top: 10rpx;
+}
+.model-row{
+  border: 1rpx solid #B3B3B3;
+}

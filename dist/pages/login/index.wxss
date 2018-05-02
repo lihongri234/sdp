@@ -1,0 +1,33 @@
+/* pages/login/index.wxss */
+
+page {
+    background: #303030;
+}
+
+.logo_box {
+    width: 200rpx;
+    margin: 100rpx auto 136rpx;
+}
+
+.img-1 {
+    width: 200rpx;
+    height: 60rpx;
+}
+.input_box{
+    width: 80%;
+
+}
+.bb{
+    border-bottom: 1rpx solid #ff683e;
+}
+button{
+    margin-top: 80rpx;
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    background: #ff683e;
+    border-radius: 5px;
+}
+.mb60{
+    margin-bottom: 60rpx;
+}

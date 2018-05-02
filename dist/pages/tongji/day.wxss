@@ -1,0 +1,8 @@
+/* pages/tongji/day.wxss */
+
+.item_box .border {
+    border-bottom: 5px dashed #efeff4;
+}
+.item_box:last-child .border{
+    border:0;
+}

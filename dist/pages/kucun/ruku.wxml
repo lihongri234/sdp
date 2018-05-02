@@ -1,0 +1,58 @@
+<!--pages/kucun/ruku.wxml-->
+<view class='container'>
+    <view class='pr30 pl30 bc-1 mt30'>
+        <navigator url='../clients/index?type={{Type==0?0:1}}' class='fac bb lh3' hover-class='none'>
+            <view class='f-3'>
+                <view class='fsc' wx:if="{{Type==0}}">
+                    <image src='../../img/bb_ico_1.png' class='img-2 mr20'></image>
+                    <view class='fs28 fc-1'>选择客户</view>
+                </view>
+                <view class='fsc' wx:else>
+                    <image src='../../img/bb_ico_3.png' class='img-2 mr20'></image>
+                    <view class='fs28 fc-1'>选择供应商</view>
+                </view>
+            </view>
+            <view>
+                <view class='fsc'>
+                    <view class='fs28 fc-3 mr20'>散户</view>
+                    <image src='../../img/direction.png' class='img-1'></image>
+                </view>
+            </view>
+        </navigator>
+        <view class='fac bb lh3' bindtap='selectHandler'>
+            <view class='f-3'>
+                <view class='fsc'>
+                    <image src='../../img/bb_ico_2.png' class='img-2 mr20'></image>
+                    <view class='fs28 fc-1'>添加入库时间</view>
+                </view>
+            </view>
+            <view>
+                <view class='fsc'>
+                   <view class='fs28 fc-3'>{{fullData}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='date_box p30 bc-1' wx:if="{{isshowdate}}">
+        <view class='fbc mb30'>
+            <view bindtap='prevMonth' class='f-1 tr'><image src='../../img/jiantou.png' class='img-1'></image></view>
+            <view class='f-2 fc-6 tc'>{{fullData}}</view>
+            <view bindtap='nextMonth' class='f-1 tl'><image src='../../img/jiantou.png' class='right img-1 {{isgray?"gray":""}}'></image></view>
+        </view>
+        <view class='fac mb20'>
+            <view class='fs30 lh2'>日</view>
+            <view class='fs30 lh2'>一</view>
+            <view class='fs30 lh2'>二</view>
+            <view class='fs30 lh2'>三</view>
+            <view class='fs30 lh2'>四</view>
+            <view class='fs30 lh2'>五</view>
+            <view class='fs30 lh2'>六</view>
+        </view>
+        <view class='fsw day_box'>
+            <view wx:for="{{dayArr}}" wx:key="{{index}}" data-index='{{index}}' bindtap='selectday'>
+                <text class='{{item==day?"active":""}}'>{{item}}</text>
+            </view>
+        </view>
+    </view>
+    <navigator url='ruku2' class='btn-orange mt30 center tc br5'>下一步</navigator>
+</view>

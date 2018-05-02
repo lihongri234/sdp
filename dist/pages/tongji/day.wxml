@@ -1,0 +1,70 @@
+<!--pages/tongji/day.wxml-->
+<view class='container'>
+    <scroll-view scroll-y="true" class="scoll-h" style="height:{{scrollHeight}}px;" bindscrolltolower="scrolltolower">
+        <block>
+            <view class='item_box bc-1 mb10'>
+                <view class='fbc pr bb lh3 mb20 pl30 pr30 pt10 pb10'>
+                    <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                </view>
+                <navigator url='' class='border' hover-class='none'>
+                    <view class='p30 fbc '>
+                        <view class='f-3 '>
+                            <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                            <view class='fs26 lh2 fc-2 '>支付方式：
+                                <text class='fc-6'>现金</text>
+                            </view>
+                            <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                            <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                            <view class='fs26 lh25 fc-2 bold'>金额：1537.00</view>
+                        </view>
+                        <view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+            <view class='item_box bc-1 mb10'>
+                <view class='fbc pr bb lh3 mb20 pl30 pr30 pt10 pb10'>
+                    <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                </view>
+                <navigator url='' class='border' hover-class='none'>
+                    <view class='p30 fbc '>
+                        <view class='f-3 '>
+                            <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                            <view class='fs26 lh2 fc-2 '>支付方式：
+                                <text class='fc-6 '>现金</text>
+                            </view>
+                            <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                            <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                            <view class='fs26 lh25 fc-2 bold'>金额：1537.00</view>
+                        </view>
+                        <view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+            <view class='item_box bc-1 mb10'>
+                <view class='fbc pr bb lh3 mb20 pl30 pr30 pt10 pb10'>
+                    <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                </view>
+                <navigator url='' class='border' hover-class='none'>
+                    <view class='p30 fbc '>
+                        <view class='f-3 '>
+                            <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                            <view class='fs26 lh2 fc-2 '>支付方式：
+                                <text class='fc-6 '>现金</text>
+                            </view>
+                            <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                            <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                            <view class='fs26 lh25 fc-2 bold'>金额：1537.00</view>
+                        </view>
+                        <view>
+                            <image src='../../img/direction.png ' class='img-1 '></image>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </block>
+    </scroll-view>
+</view>

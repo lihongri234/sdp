@@ -1,0 +1,125 @@
+<!--pages/kucun/pandian.wxml-->
+<view class='container pr'>
+    <view class='bc-1 fs26 fbc p30 '>
+        <view class='fc-6 fs26' wx:if="{{IsShowSlot}}">总盘点次数：4次</view>
+        <view class='fsc' wx:else>
+            <view class='br5 pl20 pr20 lh15 mr20 bc-8 fc {{DateIndex==0?"active":""}}' bindtap='SelectDateHandler' data-dateindex='0'>今日</view>
+            <view class='br5 pl20 pr20 lh15 mr20 bc-8 fc {{DateIndex==1?"active":""}}' bindtap='SelectDateHandler' data-dateindex='1'>昨日</view>
+            <view class='br5 pl20 pr20 lh15 mr20 bc-8 fc {{DateIndex==2?"active":""}}' bindtap='SelectDateHandler' data-dateindex='2'>本月</view>
+        </view>
+        <view class='fc-1 fs26 pl30 bl' bindtap='SoltHandler'>筛选</view>
+    </view>
+    <scroll-view scroll-y="true" class="mt20 bc-1" style="height:{{scrollHeight-95}}px;" bindscrolltolower="scrolltolower">
+        <view class='pb100'>
+            <navigator url='detail' class='item bb fbc p30'>
+                <view class='fs30 f-1 fc-1'>
+                    2018-03-01 16:12
+                </view>
+                <view class='fs24 mr20 fc-3'>
+                    盘点：3个品类
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='detail' class='item bb fbc p30'>
+                <view class='fs30 f-1 fc-1'>
+                    2018-03-01 16:12
+                </view>
+                <view class='fs24 mr20 fc-3'>
+                    盘点：3个品类
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='detail' class='item bb fbc p30'>
+                <view class='fs30 f-1 fc-1'>
+                    2018-03-01 16:12
+                </view>
+                <view class='fs24 mr20 fc-3'>
+                    盘点：3个品类
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='detail' class='item bb fbc p30'>
+                <view class='fs30 f-1 fc-1'>
+                    2018-03-01 16:12
+                </view>
+                <view class='fs24 mr20 fc-3'>
+                    盘点：3个品类
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='detail' class='item bb fbc p30'>
+                <view class='fs30 f-1 fc-1'>
+                    2018-03-01 16:12
+                </view>
+                <view class='fs24 mr20 fc-3'>
+                    盘点：3个品类
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='detail' class='item bb fbc p30'>
+                <view class='fs30 f-1 fc-1'>
+                    2018-03-01 16:12
+                </view>
+                <view class='fs24 mr20 fc-3'>
+                    盘点：3个品类
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='detail' class='item bb fbc p30'>
+                <view class='fs30 f-1 fc-1'>
+                    2018-03-01 16:12
+                </view>
+                <view class='fs24 mr20 fc-3'>
+                    盘点：3个品类
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='detail' class='item bb fbc p30'>
+                <view class='fs30 f-1 fc-1'>
+                    2018-03-01 16:12
+                </view>
+                <view class='fs24 mr20 fc-3'>
+                    盘点：3个品类
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='detail' class='item bb fbc p30'>
+                <view class='fs30 f-1 fc-1'>
+                    2018-03-01 16:12
+                </view>
+                <view class='fs24 mr20 fc-3'>
+                    盘点：3个品类
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='detail' class='item bb fbc p30'>
+                <view class='fs30 f-1 fc-1'>
+                    2018-03-01 16:12
+                </view>
+                <view class='fs24 mr20 fc-3'>
+                    盘点：3个品类
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='detail' class='item bb fbc p30'>
+                <view class='fs30 f-1 fc-1'>
+                    2018-03-01 16:12
+                </view>
+                <view class='fs24 mr20 fc-3'>
+                    盘点：3个品类
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+            <navigator url='detail' class='item bb fbc p30'>
+                <view class='fs30 f-1 fc-1'>
+                    2018-03-01 16:12
+                </view>
+                <view class='fs24 mr20 fc-3'>
+                    盘点：30个品类
+                </view>
+                <image src='../../img/direction.png ' class='img-1'></image>
+            </navigator>
+        </view>
+    </scroll-view>
+    <view class='palb fs32 lh3 tc bc-3 fc' bindtap='PanDianHandler'>进入盘点</view>
+</view>

@@ -1,0 +1,27 @@
+/* pages/dingdan/detail.wxss */
+
+page {
+    background: #fff;
+}
+
+.parb {
+    width: 100%;
+}
+
+.img-3 {
+    width: 120rpx;
+    height: 120rpx;
+}
+
+.palb {
+    width: 100%;
+    border-top: 1px solid #ff683e;
+}
+
+.cuikun_box {
+    width: 260rpx;
+    border: none;
+    bottom: 210rpx;
+    left: 50%;
+    transform: translate(-50%);
+}

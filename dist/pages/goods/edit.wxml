@@ -1,0 +1,54 @@
+<!--pages/goods/edit.wxml-->
+<view class='container'>
+  <view class='fbc bc-1 p-20-30 bb mt20'>
+    <view class='f-1 tc'>商品名称</view>
+    <view class='f-3 pl30'>
+      <input class='fc-3' type='text' placeholder='请输入商品名称' value='菠萝p蜜'></input>
+    </view>
+  </view>
+  <view class='fbc bc-1 p-20-30 bb'>
+    <view class='f-1 tc'>销售价格</view>
+    <view class='f-3 pl30'>
+      <input class='fc-6' type='text' placeholder='请输入销售价格' value='￥89.90'></input>
+    </view>
+  </view>
+  <view class=' bc-1 p-20-30 bb'>
+    <view class='pl20 pb20'>商品图片</view>
+    <view class='page fsc p20 bc-2'>
+      <image class='f-1' src='../../img/add.png'  mode='aspecFit'></image>
+      <text class='f-3 fc-3'>点击修改商品照片</text>
+    </view>
+  </view>
+    <view class='fbc bc-1 p-20-30 bb'>
+    <view class='f-1 tc'>商品编号</view>
+    <view class='f-3 pl30'>
+      <input class='fc-3' type='text' placeholder='请输入商品编号' value='1002'></input>
+    </view>
+  </view>
+  <view class='fbc bc-1 p-20-30 bb'>
+    <view class='f-1 tc'>单　　位</view>
+    <view class='f-3 pl30'>
+      <input class='fc-3' type='text' placeholder='请输入单位' value='件'></input>
+    </view>
+  </view>
+  <view class='fbc bc-1 p-20-30 bb'>
+    <view class='f-1 tc'>规　　格</view>
+    <view class='f-3 pl30'>
+      <input class='fc-3' type='text' placeholder='请输入规格' value='12.5kg/件'></input>
+    </view>
+  </view>
+   <view class='fbc bc-1 p-20-30 bb'>
+    <view class='f-1 tc'>产　　地</view>
+    <view class='f-3 pl30'>
+      <input class='fc-3' type='text' placeholder='请输入产地' value='海南三亚'></input>
+    </view>
+  </view>
+   <view class='fbc bc-1 p-20-30 bb'>
+    <view class='f-1 tc'>品　　牌</view>
+    <view class='f-3 pl30'>
+      <input class='fc-3' type='text' placeholder='请输入品牌' value='娃哈哈'></input>
+    </view>
+  </view>
+
+      <button class='btn-orange  mt30' bindtap='add'>保存并上架</button>
+</view>

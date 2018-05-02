@@ -1,0 +1,10 @@
+/* pages/clients/updateclient.wxss */
+
+page {
+    background: #fff;
+}
+
+.bc-2 {
+    background-color: #c8c8c8;
+    color: #565656;
+}

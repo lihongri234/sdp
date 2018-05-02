@@ -1,0 +1,23 @@
+<!--pages/seting/staffinfo.wxml-->
+<view class='container'>
+  <view class='fsc bc-1 bb p-20-30 mt20'>
+    <view class='f-1'>员工姓名</view>
+    <input class='f-3 fc-3' placeholder='请输入员工姓名' value='李四'></input>
+  </view>
+  <view class='fsc bc-1 bb p-20-30'>
+    <view class='f-1'>登录账号</view>
+    <input class='f-3 fc-3' placeholder='请输入登录账号' value='15987654321'></input>
+  </view>
+  <navigator class='fsc bc-1 bb p30'  url='/pages/seting/staffauth'>
+    <view class='f-1'>权限管理</view>
+    <view class='f-3 fsw fc-3 fs26'>客户管理 统计报表 客户管理 统计报表</view>
+    <view class='fc-3'>></view>
+  </navigator>
+  <view class='fsc bc-1 bb p30'>
+    <view class='f-1'>是否启用</view>
+    <view class='fc-3'>
+      <switch type='switch' checked='true' color='#FF683E'></switch>
+    </view>
+  </view>
+    <button class='btn-orange mt30'>保存信息</button>
+</view>

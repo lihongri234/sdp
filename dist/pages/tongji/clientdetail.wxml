@@ -1,0 +1,98 @@
+<!--pages/tongji/clientdetail.wxml-->
+<view class='container pr'>
+    <view class='title fs40 lh3 pt20 pb20 bc-1 tc'>张老板</view>
+    <view class='fbc bc-3 lh3 tc'>
+        <view class='f-1 fs24 fc'>销售金额</view>
+        <view class='f-1 fs24 fc'>成本</view>
+        <view class='f-1 fs24 fc'>利润</view>
+        <view class='f-1 fs24 fc'>利率</view>
+    </view>
+    <scroll-view scroll-y="true" style="height:{{scrollHeight-116}}px;" bindscrolltolower="scrolltolower">
+        <view class='pb200'>
+            <view class='item bc-1 pt20 pb30'>
+                <view class='fs26 fc-6 bc-2 lh2 pl30'>2018-04-15</view>
+                <view class='item pb10 pt20 bc-1'>
+                    <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                        <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fbc ml10 mr10 p10 tc'>
+                        <view class='f-1 fc-2'>￥71004.00</view>
+                        <view class='f-1 fc-2'>￥714.00</view>
+                        <view class='f-1 fc-1'>￥704.00</view>
+                        <view class='f-1 fc-2'>32%</view>
+                    </view>
+                </view>
+                <view class='item pb10 pt20 bc-1'>
+                    <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                        <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fbc ml10 mr10 p10 tc'>
+                        <view class='f-1 fc-2'>￥71004.00</view>
+                        <view class='f-1 fc-2'>￥714.00</view>
+                        <view class='f-1 fc-1'>￥704.00</view>
+                        <view class='f-1 fc-3'>32%</view>
+                    </view>
+                </view>
+            </view>
+            <view class='item bc-1 pt20 pb30'>
+                <view class='fs26 fc-6 bc-2 lh2 pl30'>2018-04-15</view>
+                <view class='item pb10 pt20 bc-1'>
+                    <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                        <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fbc ml10 mr10 p10 tc'>
+                        <view class='f-1 fc-2'>￥71004.00</view>
+                        <view class='f-1 fc-2'>￥714.00</view>
+                        <view class='f-1 fc-1'>￥704.00</view>
+                        <view class='f-1 fc-2'>32%</view>
+                    </view>
+                </view>
+                <view class='item pb10 pt20 bc-1'>
+                    <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                        <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fbc ml10 mr10 p10 tc'>
+                        <view class='f-1 fc-2'>￥71004.00</view>
+                        <view class='f-1 fc-2'>￥714.00</view>
+                        <view class='f-1 fc-1'>￥704.00</view>
+                        <view class='f-1 fc-3'>32%</view>
+                    </view>
+                </view>
+            </view>
+            <view class='item bc-1 pt20 pb30'>
+                <view class='fs26 fc-6 bc-2 lh2 pl30'>2018-04-15</view>
+                <view class='item pb10 pt20 bc-1'>
+                    <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                        <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fbc ml10 mr10 p10 tc'>
+                        <view class='f-1 fc-2'>￥71004.00</view>
+                        <view class='f-1 fc-2'>￥714.00</view>
+                        <view class='f-1 fc-1'>￥704.00</view>
+                        <view class='f-1 fc-2'>32%</view>
+                    </view>
+                </view>
+                <view class='item pb10 pt20 bc-1'>
+                    <view class='fs24 fc-2 pl30 lh2'>菠萝蜜
+                        <text class='fc-3'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fbc ml10 mr10 p10 tc'>
+                        <view class='f-1 fc-2'>￥71004.00</view>
+                        <view class='f-1 fc-2'>￥714.00</view>
+                        <view class='f-1 fc-1'>￥704.00</view>
+                        <view class='f-1 fc-3'>32%</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <view class='palb'>
+        <view class='fs16 fc-6 lh2 pl30'>提示：以下为合计金额。</view>
+        <view class='fbc bc-3 lh3 tc'>
+            <view class='f-1 fs24 fc'>￥71004</view>
+            <view class='f-1 fs24 fc'>￥71004</view>
+            <view class='f-1 fs24 fc'>￥71004</view>
+            <view class='f-1 fs24 fc'>74%</view>
+        </view>
+    </view>
+</view>

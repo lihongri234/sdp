@@ -1,0 +1,14 @@
+/* pages/seting/bossinfo.wxss */
+.model{
+  z-index: 999;
+}
+.model-body{
+  width:90%;
+  height: auto;
+  position: absolute;
+  left: 5%;
+  top: 10rpx;
+}
+.model-row{
+  border: 1rpx solid #B3B3B3;
+}

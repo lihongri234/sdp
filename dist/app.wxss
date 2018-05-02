@@ -1,0 +1,646 @@
+/**app.wxss**/
+
+page {
+    font-size: 32rpx;
+    background-color: #efeff4;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+view, navigator, input, textarea {
+    box-sizing: border-box;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+/*flex布局 两边对齐 子元素垂直居中  */
+
+.fbc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*flex布局 居中对齐 子元素垂直居中   */
+
+.fac {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*flex布局 从左到右排序 子元素垂直居中   */
+
+.fsc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*flex布局 居中对齐 子元素溢出换行 */
+
+.faw {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: flex-wrap;
+}
+
+/*flex布局 两边对齐 子元素溢出换行 */
+
+.fbw {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*flex布局 从左到右排序 子元素溢出换行 */
+
+.fsw {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/*flex布局 占用的比例  */
+
+.f-1 {
+    flex: 1;
+}
+
+.f-2 {
+    flex: 2;
+}
+
+.f-3 {
+    flex: 3;
+}
+
+/*隐藏元素  */
+
+.hide {
+    display: none;
+}
+
+/*行内块级元素  */
+
+.inline {
+    display: inline-block;
+}
+
+/*显示元素  */
+
+.show {
+    display: block;
+}
+
+/*边框  */
+
+.b1 {
+    border: 1rpx solid #ff8665;
+}
+
+.bb {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.bt {
+    border-top: 1px solid #e5e5e5;
+}
+
+.bl {
+    border-left: 1px solid #e5e5e5;
+}
+
+.br {
+    border-right: 1px solid #e5e5e5;
+}
+
+/*背景颜色  列出项目使用到的颜色 */
+
+.bc-1 {
+    background-color: #fff;
+}
+
+.bc-2 {
+    background-color: #efeff4;
+}
+
+.bc-3 {
+    background-color: #ff683e;
+}
+
+.bc-4 {
+    background-color: #188af5;
+}
+
+.bc-5 {
+    background-color: #f5b918;
+}
+
+.bc-6 {
+    background-color: #565656;
+}
+
+.bc-7 {
+    background-color: #b3b3b3;
+}
+
+.bc-8 {
+    background-color: #ffe1d9;
+}
+.bc-9 {
+    background-color: #18cebd;
+}
+/*字体颜色  */
+
+.fc {
+    color: #fff;
+}
+
+.fc-0 {
+    color: #000;
+}
+
+.fc-1 {
+    color: #333;
+}
+
+.fc-2 {
+    color: #565656;
+}
+
+.fc-3 {
+    color: #898989;
+}
+
+.fc-4 {
+    color: #f5b918;
+}
+
+.fc-5 {
+    color: #18cebd;
+}
+
+.fc-6 {
+    color: #ff683e;
+}
+
+/*字体居中方式  */
+
+.tc {
+    text-align: center;
+}
+
+.tr {
+    text-align: right;
+}
+
+.tl {
+    text-align: left;
+}
+
+/*字体加粗  */
+
+.bold {
+    font-weight: bold;
+}
+
+/*字体大小设置  */
+
+.fs20 {
+    font-size: 20rpx;
+}
+
+.fs22 {
+    font-size: 22rpx;
+}
+
+.fs24 {
+    font-size: 24rpx;
+}
+
+.fs26 {
+    font-size: 26rpx;
+}
+
+.fs28 {
+    font-size: 28rpx;
+}
+
+.fs30 {
+    font-size: 30rpx;
+}
+
+.fs32 {
+    font-size: 32rpx;
+}
+
+.fs34 {
+    font-size: 34rpx;
+}
+
+.fs36 {
+    font-size: 36rpx;
+}
+
+.fs40 {
+    font-size: 40rpx;
+}
+
+.fs42 {
+    font-size: 42rpx;
+}
+
+.fs48 {
+    font-size: 48rpx;
+}
+
+/*text标签的最初的字体大小和 居中  */
+
+text {
+    font-size: 24rpx;
+    text-align: center;
+}
+
+/*字体的行高  */
+
+.lh1 {
+    line-height: 1;
+}
+
+.lh15 {
+    line-height: 1.5;
+}
+
+.lh18 {
+    line-height: 1.8s;
+}
+
+.lh2 {
+    line-height: 2;
+}
+
+.lh25 {
+    line-height: 2.5;
+}
+
+.lh3 {
+    line-height: 3;
+}
+
+/*圆角  */
+
+.br-50 {
+    border-radius: 50%;
+}
+
+.br5 {
+    border-radius: 5px;
+}
+
+.br10 {
+    border-radius: 10px;
+}
+
+.br50 {
+    border-radius: 50px;
+}
+
+/*image 默认的宽高  */
+
+image {
+    width: 100%;
+    height: 100%;
+}
+
+/*图片一像素边框  */
+
+.img_box {
+    width: 250rpx;
+    height: 250rpx;
+    position: relative;
+}
+
+.img_box::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200%;
+    height: 200%;
+    border: 1px solid #c9c9c9;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+    border-radius: 5px;
+}
+
+/*居中  */
+
+.center {
+    margin: 0 auto;
+}
+
+/*外边距设置  */
+
+.m-20-30 {
+    margin: 20rpx 30rpx;
+}
+
+.m10 {
+    margin: 10rpx;
+}
+
+.m20 {
+    margin: 20rpx;
+}
+
+.m30 {
+    margin: 30rpx;
+}
+
+.mt10 {
+    margin-top: 10rpx;
+}
+
+.mt20 {
+    margin-top: 20rpx;
+}
+
+.mt30 {
+    margin-top: 30rpx;
+}
+
+.mr10 {
+    margin-right: 10rpx;
+}
+
+.mr20 {
+    margin-right: 20rpx;
+}
+
+.mr30 {
+    margin-right: 30rpx;
+}
+
+.ml10 {
+    margin-left: 10rpx;
+}
+
+.ml20 {
+    margin-left: 20rpx;
+}
+
+.ml30 {
+    margin-left: 30rpx;
+}
+
+.mb10 {
+    margin-bottom: 10rpx;
+}
+
+.mb20 {
+    margin-bottom: 20rpx;
+}
+
+.mb30 {
+    margin-bottom: 30rpx;
+}
+
+/*内边距设置  */
+
+.p-20-30 {
+    padding: 20rpx 30rpx;
+}
+
+.p10 {
+    padding: 10rpx;
+}
+
+.p20 {
+    padding: 20rpx;
+}
+
+.p30 {
+    padding: 30rpx;
+}
+
+.pt10 {
+    padding-top: 10rpx;
+}
+
+.pt20 {
+    padding-top: 20rpx;
+}
+
+.pt30 {
+    padding-top: 30rpx;
+}
+
+.pb10 {
+    padding-bottom: 10rpx;
+}
+
+.pb20 {
+    padding-bottom: 20rpx;
+}
+
+.pb30 {
+    padding-bottom: 30rpx;
+}
+
+.pb100 {
+    padding-bottom: 100rpx;
+}
+
+.pl10 {
+    padding-left: 10rpx;
+}
+
+.pl20 {
+    padding-left: 20rpx;
+}
+
+.pl30 {
+    padding-left: 30rpx;
+}
+
+.pr10 {
+    padding-right: 10rpx;
+}
+
+.pr20 {
+    padding-right: 20rpx;
+}
+
+.pr30 {
+    padding-right: 30rpx;
+}
+
+pb200 {
+    padding-bottom: 200rpx;
+}
+
+/*元素设置成灰色  */
+
+.gray {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/*遮罩层  */
+
+.mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*固定定位  */
+
+.pf {
+    position: fixed;
+}
+
+/*相对定位  */
+
+.pr {
+    position: relative;
+}
+
+/*绝对定位 左上  */
+
+.palt {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/*绝对定位 右上  */
+
+.part {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*绝对定位 左下  */
+
+.palb {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/*绝对定位 右下  */
+
+.parb {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/*按钮设置  */
+
+button {
+    background-color: #fff;
+    width: 200rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 30rpx;
+}
+
+button::after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(191, 191, 191, 0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.btn-orange {
+    background-color: #ff8665;
+    color: #fff;
+    width: 90%;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 30rpx;
+}
+
+/*一行出现省略号  */
+
+.ellipsis {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*两行出现省略号  */
+
+.ellipsis-2 {
+    font-size: 26rpx;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    height: auto;
+}
+
+/*三行出现省略号  */
+
+.ellipsis-3 {
+    font-size: 26rpx;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    height: auto;
+}
+
+/* checkbox */
+
+checkbox .wx-checkbox-input {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+    color: #fff;
+    background-color: red;
+}
+
+switch {
+    transform: scale(0.6);
+    margin-left: -24rpx;
+}

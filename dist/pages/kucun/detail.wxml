@@ -1,0 +1,235 @@
+<!--pages/kucun/detail.wxml-->
+<view class='container bc-2'>
+    <scroll-view scroll-y="true" style="height:{{scrollHeight}}px;" bindscrolltolower="scrolltolower">
+        <view class='pb30'>
+            <view class='item bc-1 mb20'>
+                <view class='bb fbc p30'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fs22 fc br50 pl20 pr20 lh2 bc-9 '>
+                        盘亏
+                    </view>
+                </view>
+                <view class='fbc p30 tl'>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>库存数量：498</view>
+                        <view class='fs26 lh2 fc-2'>盘点数量：494</view>
+                        <view class='fs26 lh2 fc-2'>盈亏数量：
+                            <text class='fc-5 fs26'>-4</text>
+                        </view>
+                    </view>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>成本均价：￥498.23</view>
+                        <view class='fs26 lh2 fc-2'>商品总值：￥498456.32</view>
+                        <view class='fs26 lh2 fc-2'>盈亏金额：
+                            <text class='fc-5 fs26'>￥2812.23</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20'>
+                <view class='item bb fbc p30'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fs22 fc br50 pl20 pr20 lh2 bc-3 '>
+                        盘盈
+                    </view>
+                </view>
+                <view class='fbc p30 tl'>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>库存数量：498</view>
+                        <view class='fs26 lh2 fc-2'>盘点数量：494</view>
+                        <view class='fs26 lh2 fc-2'>盈亏数量：
+                            <text class='fc-6 fs26'>-4</text>
+                        </view>
+                    </view>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>成本均价：￥498.23</view>
+                        <view class='fs26 lh2 fc-2'>商品总值：￥498456.32</view>
+                        <view class='fs26 lh2 fc-2'>盈亏金额：
+                            <text class='fc-6 fs26'>￥2812.23</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20'>
+                <view class='item bb fbc p30'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fs22 fc br50 pl20 pr20 lh2  bc-7'>
+                        盘平
+                    </view>
+                </view>
+                <view class='fbc p30 tl'>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>库存数量：498</view>
+                        <view class='fs26 lh2 fc-2'>盘点数量：494</view>
+                        <view class='fs26 lh2 fc-2'>盈亏数量： -4
+                        </view>
+                    </view>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>成本均价：￥498.23</view>
+                        <view class='fs26 lh2 fc-2'>商品总值：￥498456.32</view>
+                        <view class='fs26 lh2 fc-2'>盈亏金额： ￥2812.23
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20'>
+                <view class='bb fbc p30'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fs22 fc br50 pl20 pr20 lh2 bc-9 '>
+                        盘亏
+                    </view>
+                </view>
+                <view class='fbc p30 tl'>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>库存数量：498</view>
+                        <view class='fs26 lh2 fc-2'>盘点数量：494</view>
+                        <view class='fs26 lh2 fc-2'>盈亏数量：
+                            <text class='fc-5 fs26'>-4</text>
+                        </view>
+                    </view>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>成本均价：￥498.23</view>
+                        <view class='fs26 lh2 fc-2'>商品总值：￥498456.32</view>
+                        <view class='fs26 lh2 fc-2'>盈亏金额：
+                            <text class='fc-5 fs26'>￥2812.23</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20'>
+                <view class='item bb fbc p30'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fs22 fc br50 pl20 pr20 lh2 bc-3 '>
+                        盘盈
+                    </view>
+                </view>
+                <view class='fbc p30 tl'>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>库存数量：498</view>
+                        <view class='fs26 lh2 fc-2'>盘点数量：494</view>
+                        <view class='fs26 lh2 fc-2'>盈亏数量：
+                            <text class='fc-6 fs26'>-4</text>
+                        </view>
+                    </view>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>成本均价：￥498.23</view>
+                        <view class='fs26 lh2 fc-2'>商品总值：￥498456.32</view>
+                        <view class='fs26 lh2 fc-2'>盈亏金额：
+                            <text class='fc-6 fs26'>￥2812.23</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20'>
+                <view class='item bb fbc p30'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fs22 fc br50 pl20 pr20 lh2  bc-7'>
+                        盘平
+                    </view>
+                </view>
+                <view class='fbc p30 tl'>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>库存数量：498</view>
+                        <view class='fs26 lh2 fc-2'>盘点数量：494</view>
+                        <view class='fs26 lh2 fc-2'>盈亏数量： -4
+                        </view>
+                    </view>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>成本均价：￥498.23</view>
+                        <view class='fs26 lh2 fc-2'>商品总值：￥498456.32</view>
+                        <view class='fs26 lh2 fc-2'>盈亏金额： ￥2812.23
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20'>
+                <view class='bb fbc p30'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fs22 fc br50 pl20 pr20 lh2 bc-9 '>
+                        盘亏
+                    </view>
+                </view>
+                <view class='fbc p30 tl'>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>库存数量：498</view>
+                        <view class='fs26 lh2 fc-2'>盘点数量：494</view>
+                        <view class='fs26 lh2 fc-2'>盈亏数量：
+                            <text class='fc-5 fs26'>-4</text>
+                        </view>
+                    </view>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>成本均价：￥498.23</view>
+                        <view class='fs26 lh2 fc-2'>商品总值：￥498456.32</view>
+                        <view class='fs26 lh2 fc-2'>盈亏金额：
+                            <text class='fc-5 fs26'>￥2812.23</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20'>
+                <view class='item bb fbc p30'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fs22 fc br50 pl20 pr20 lh2 bc-3 '>
+                        盘盈
+                    </view>
+                </view>
+                <view class='fbc p30 tl'>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>库存数量：498</view>
+                        <view class='fs26 lh2 fc-2'>盘点数量：494</view>
+                        <view class='fs26 lh2 fc-2'>盈亏数量：
+                            <text class='fc-6 fs26'>-4</text>
+                        </view>
+                    </view>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>成本均价：￥498.23</view>
+                        <view class='fs26 lh2 fc-2'>商品总值：￥498456.32</view>
+                        <view class='fs26 lh2 fc-2'>盈亏金额：
+                            <text class='fc-6 fs26'>￥2812.23</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class='item bc-1 mb20'>
+                <view class='item bb fbc p30'>
+                    <view class='fs26 f-2 fc-1'>西瓜
+                        <text class='fs22 fc-3 ellipsis'>[海南山亚][12.5kg/件][三亚馆][件]</text>
+                    </view>
+                    <view class='fs22 fc br50 pl20 pr20 lh2  bc-7'>
+                        盘平
+                    </view>
+                </view>
+                <view class='fbc p30 tl'>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>库存数量：498</view>
+                        <view class='fs26 lh2 fc-2'>盘点数量：494</view>
+                        <view class='fs26 lh2 fc-2'>盈亏数量： -4
+                        </view>
+                    </view>
+                    <view class='f-1'>
+                        <view class='fs26 lh2 fc-2'>成本均价：￥498.23</view>
+                        <view class='fs26 lh2 fc-2'>商品总值：￥498456.32</view>
+                        <view class='fs26 lh2 fc-2'>盈亏金额： ￥2812.23
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

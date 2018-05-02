@@ -1,0 +1,32 @@
+/* pages/kucun/pandianing.wxss */
+
+.container, page {
+    height: 100%;
+}
+
+.img-1 {
+    width: 28rpx;
+    height: 28rpx;
+}
+
+.palt {
+    width: 92%;
+    right: 0;
+    top: 5%;
+}
+
+.palb {
+    width: 100%;
+}
+
+.border {
+    border: 1px solid #ff683e;
+}
+
+.border2 {
+    border: 1px solid #b3b3b3;
+}
+
+.box.active {
+    background: #ffd1c5;
+}

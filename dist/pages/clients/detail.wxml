@@ -1,0 +1,447 @@
+<!--pages/clients/detail.wxml-->
+<view class='container'>
+    <view class='m30 bc-1 p20 br5'>
+        <view class='fac'>
+            <view class='fs34 f-3'>李先生</view>
+            <navigator url='updateclient' hover-class='none'>
+                <image src='../../img/edit.png' class='img-1'></image>
+            </navigator>
+        </view>
+        <view class='fs24 fc-2 lh2 mt20'>联系电话：15865632565</view>
+        <view class='fs24 fc-2 lh2 ellipsis'>收货地址：深圳市罗湖区杨汊湖路20号多少多少栋</view>
+        <view class='fs24 fc-2 lh2 ellipsis'>备注信息：欠的多，少拿两条鱼</view>
+        <view class='fs24 fc-2 lh2 mb20'>允许挂账：
+            <switch checked="{{isguazhang}}" color='#ff683e' name="isguazhang" />
+
+        </view>
+    </view>
+    <view class='tab_box fsc bc-1 lh2 tc pt10 pb10 bb'>
+        <view class='f-2 fac'>
+            <view bindtap='ShowTab' data-tabindex='0' class='fc-3 fs30 {{tabIndex=="0"?"active":""}}'>交易订单</view>
+            <view bindtap='ShowTab' data-tabindex='1' class='fc-3 fs30 mr30 {{tabIndex=="1"?"active":""}}'>清款记录</view>
+        </view>
+        <view class='pr30 bl' bindtap='SoltHandler'>
+            <view hover-class='none' class='fc-3 fs30 ml30'>筛选</view>
+        </view>
+    </view>
+    <swiper class="tab-content" current="{{tabIndex}}" duration="300" bindchange="switchTab" style="height:{{scrollHeight-290}}px;">
+        <!--交易订单  -->
+        <swiper-item>
+            <scroll-view scroll-y="true" class="pb100" style="height:{{scrollHeight-290}}px;" bindscrolltolower="scrolltolower">
+                <block>
+                    <view class='item_box bc-1 mb10'>
+                        <view class='fbc pr bb lh3 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                        </view>
+                        <view class='pr pb20' hover-class='none'>
+                            <view class='fbc pl30 pr30'>
+                                <view class='f-3 '>
+                                    <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                                    <view class='fs26 lh2 fc-2 '>支付方式：现金
+                                    </view>
+                                    <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                                    <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                                    <view class='fs26 lh25 '>金额：1537.00
+                                        <text class='fc-6 fs26 ml20'>待清款：5237.00</text>
+                                    </view>
+                                </view>
+                            </view>
+                            <view class='part fs26 fc lh2 br50 pl20 pr20 active-3' bindtap='QingKuan'>清款</view>
+                        </view>
+                    </view>
+                    <view class='item_box bc-1 mb10'>
+                        <view class='fbc pr bb lh3 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                        </view>
+                        <view class='pr pb20' hover-class='none'>
+                            <view class='fbc pl30 pr30'>
+                                <view class='f-3 '>
+                                    <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                                    <view class='fs26 lh2 fc-2 '>支付方式：现金
+                                    </view>
+                                    <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                                    <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                                    <view class='fs26 lh25 '>金额：1537.00
+                                        <text class='fc-6 fs26 ml20'>待清款：5237.00</text>
+                                    </view>
+                                </view>
+                            </view>
+                            <view class='part fs26 fc lh2 br50 pl20 pr20 active-3' bindtap='QingKuan'>清款</view>
+                        </view>
+                    </view>
+                    <view class='item_box bc-1 mb10'>
+                        <view class='fbc pr bb lh3 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                        </view>
+                        <view class='pr pb20' hover-class='none'>
+                            <view class='fbc pl30 pr30'>
+                                <view class='f-3 '>
+                                    <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                                    <view class='fs26 lh2 fc-2 '>支付方式：现金
+                                    </view>
+                                    <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                                    <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                                    <view class='fs26 lh25 '>金额：1537.00
+                                        <text class='fc-6 fs26 ml20'>待清款：5237.00</text>
+                                    </view>
+                                </view>
+                            </view>
+                            <view class='part fs26 fc lh2 br50 pl20 pr20 active-3' bindtap='QingKuan'>清款</view>
+                        </view>
+                    </view>
+                    <view class='item_box bc-1 mb10'>
+                        <view class='fbc pr bb lh3 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                        </view>
+                        <view class='pr pb20' hover-class='none'>
+                            <view class='fbc pl30 pr30'>
+                                <view class='f-3 '>
+                                    <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                                    <view class='fs26 lh2 fc-2 '>支付方式：现金
+                                    </view>
+                                    <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                                    <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                                    <view class='fs26 lh25 '>金额：1537.00
+                                        <text class='fc-6 fs26 ml20'>待清款：5237.00</text>
+                                    </view>
+                                </view>
+                            </view>
+                            <view class='part fs26 fc lh2 br50 pl20 pr20 active-3' bindtap='QingKuan'>清款</view>
+                        </view>
+                    </view>
+                    <view class='item_box bc-1 mb10'>
+                        <view class='fbc pr bb lh3 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                        </view>
+                        <view class='pr pb20' hover-class='none'>
+                            <view class='fbc pl30 pr30'>
+                                <view class='f-3 '>
+                                    <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                                    <view class='fs26 lh2 fc-2 '>支付方式：现金
+                                    </view>
+                                    <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                                    <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                                    <view class='fs26 lh25 '>金额：1537.00
+                                        <text class='fc-6 fs26 ml20'>待清款：5237.00</text>
+                                    </view>
+                                </view>
+                            </view>
+                            <view class='part fs26 fc lh2 br50 pl20 pr20 active-3' bindtap='QingKuan'>清款</view>
+                        </view>
+                    </view>
+                    <view class='item_box bc-1 mb10'>
+                        <view class='fbc pr bb lh3 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                        </view>
+                        <view class='pr pb20' hover-class='none'>
+                            <view class='fbc pl30 pr30'>
+                                <view class='f-3 '>
+                                    <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                                    <view class='fs26 lh2 fc-2 '>支付方式：现金
+                                    </view>
+                                    <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                                    <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                                    <view class='fs26 lh25 '>金额：1537.00
+                                        <text class='fc-6 fs26 ml20'>待清款：5237.00</text>
+                                    </view>
+                                </view>
+                            </view>
+                            <view class='part fs26 fc lh2 br50 pl20 pr20 active-3' bindtap='QingKuan'>清款</view>
+                        </view>
+                    </view>
+                    <view class='item_box bc-1 mb10'>
+                        <view class='fbc pr bb lh3 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                        </view>
+                        <view class='pr pb20' hover-class='none'>
+                            <view class='fbc pl30 pr30'>
+                                <view class='f-3 '>
+                                    <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                                    <view class='fs26 lh2 fc-2 '>支付方式：现金
+                                    </view>
+                                    <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                                    <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                                    <view class='fs26 lh25 '>金额：1537.00
+                                        <text class='fc-6 fs26 ml20'>待清款：5237.00</text>
+                                    </view>
+                                </view>
+                            </view>
+                            <view class='part fs26 fc lh2 br50 pl20 pr20 active-3' bindtap='QingKuan'>清款</view>
+                        </view>
+                    </view>
+                    <view class='item_box bc-1 mb10'>
+                        <view class='fbc pr bb lh3 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                        </view>
+                        <view class='pr pb20' hover-class='none'>
+                            <view class='fbc pl30 pr30'>
+                                <view class='f-3 '>
+                                    <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                                    <view class='fs26 lh2 fc-2 '>支付方式：现金
+                                    </view>
+                                    <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                                    <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                                    <view class='fs26 lh25 '>金额：1537.00
+                                        <text class='fc-6 fs26 ml20'>待清款：5237.00</text>
+                                    </view>
+                                </view>
+                            </view>
+                            <view class='part fs26 fc lh2 br50 pl20 pr20 active-3' bindtap='QingKuan'>清款</view>
+                        </view>
+                    </view>
+                    <view class='item_box bc-1 mb10'>
+                        <view class='fbc pr bb lh3 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                        </view>
+                        <view class='pr pb20' hover-class='none'>
+                            <view class='fbc pl30 pr30'>
+                                <view class='f-3 '>
+                                    <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                                    <view class='fs26 lh2 fc-2 '>支付方式：现金
+                                    </view>
+                                    <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                                    <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                                    <view class='fs26 lh25 '>金额：1537.00
+                                        <text class='fc-6 fs26 ml20'>待清款：5237.00</text>
+                                    </view>
+                                </view>
+                            </view>
+                            <view class='part fs26 fc lh2 br50 pl20 pr20 active-3' bindtap='QingKuan'>清款</view>
+                        </view>
+                    </view>
+                    <view class='item_box bc-1 mb10'>
+                        <view class='fbc pr bb lh3 mb20 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3'>订单编号：201810071102100</view>
+                        </view>
+                        <view class='pr pb20' hover-class='none'>
+                            <view class='fbc pl30 pr30'>
+                                <view class='f-3 '>
+                                    <view class='fs26 lh2 fc-2 '>客户姓名：李先生</view>
+                                    <view class='fs26 lh2 fc-2 '>支付方式：现金
+                                    </view>
+                                    <view class='fs26 lh2 fc-2 '>采购品种：2</view>
+                                    <view class='fs26 lh2 fc-2 '>下单时间：2018-03-06 11：12：02</view>
+                                    <view class='fs26 lh25 '>金额：1537.00
+                                        <text class='fc-6 fs26 ml20'>待清款：15237.00</text>
+                                    </view>
+                                </view>
+                            </view>
+                            <view class='part fs26 fc lh2 br50 pl20 pr20 active-3' bindtap='QingKuan'>清款</view>
+                        </view>
+                    </view>
+                </block>
+            </scroll-view>
+        </swiper-item>
+        <!--清款记录  -->
+        <swiper-item>
+            <scroll-view scroll-y="true" class="pb100" style="height:{{scrollHeight-290}}px;" bindscrolltolower="scrolltolower">
+                <block>
+                    <navigator url='record' class='bc-1'>
+                        <view class='fbc pr bb lh3 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3 f-2'>2018-03-01 16:12</view>
+                            <view class='fs26 fc-6 f-1 tr pr20'>清款：983.00</view>
+                            <image src='../../img/direction.png' class='img-2'></image>
+                        </view>
+                    </navigator>
+                    <navigator url='record' class='bc-1'>
+                        <view class='fbc pr bb lh3 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3 f-2'>2018-03-01 16:12</view>
+                            <view class='fs26 fc-6 f-1 tr pr20'>清款：983.00</view>
+                            <image src='../../img/direction.png' class='img-2'></image>
+                        </view>
+                    </navigator>
+                    <navigator url='record' class='bc-1'>
+                        <view class='fbc pr bb lh3 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3 f-2'>2018-03-01 16:12</view>
+                            <view class='fs26 fc-6 f-1 tr pr20'>清款：983.00</view>
+                            <image src='../../img/direction.png' class='img-2'></image>
+                        </view>
+                    </navigator>
+                    <navigator url='record' class='bc-1'>
+                        <view class='fbc pr bb lh3 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3 f-2'>2018-03-01 16:12</view>
+                            <view class='fs26 fc-6 f-1 tr pr20'>清款：983.00</view>
+                            <image src='../../img/direction.png' class='img-2'></image>
+                        </view>
+                    </navigator>
+                    <navigator url='record' class='bc-1'>
+                        <view class='fbc pr bb lh3 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3 f-2'>2018-03-01 16:12</view>
+                            <view class='fs26 fc-6 f-1 tr pr20'>清款：983.00</view>
+                            <image src='../../img/direction.png' class='img-2'></image>
+                        </view>
+                    </navigator>
+                    <navigator url='record' class='bc-1'>
+                        <view class='fbc pr bb lh3 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3 f-2'>2018-03-01 16:12</view>
+                            <view class='fs26 fc-6 f-1 tr pr20'>清款：983.00</view>
+                            <image src='../../img/direction.png' class='img-2'></image>
+                        </view>
+                    </navigator>
+                    <navigator url='record' class='bc-1'>
+                        <view class='fbc pr bb lh3 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3 f-2'>2018-03-01 16:12</view>
+                            <view class='fs26 fc-6 f-1 tr pr20'>清款：983.00</view>
+                            <image src='../../img/direction.png' class='img-2'></image>
+                        </view>
+                    </navigator>
+                    <navigator url='record' class='bc-1'>
+                        <view class='fbc pr bb lh3 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3 f-2'>2018-03-01 16:12</view>
+                            <view class='fs26 fc-6 f-1 tr pr20'>清款：983.00</view>
+                            <image src='../../img/direction.png' class='img-2'></image>
+                        </view>
+                    </navigator>
+                    <navigator url='record' class='bc-1'>
+                        <view class='fbc pr bb lh3 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3 f-2'>2018-03-01 16:12</view>
+                            <view class='fs26 fc-6 f-1 tr pr20'>清款：983.00</view>
+                            <image src='../../img/direction.png' class='img-2'></image>
+                        </view>
+                    </navigator>
+                    <navigator url='record' class='bc-1'>
+                        <view class='fbc pr bb lh3 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3 f-2'>2018-03-01 16:12</view>
+                            <view class='fs26 fc-6 f-1 tr pr20'>清款：983.00</view>
+                            <image src='../../img/direction.png' class='img-2'></image>
+                        </view>
+                    </navigator>
+                    <navigator url='record' class='bc-1'>
+                        <view class='fbc pr bb lh3 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3 f-2'>2018-03-01 16:12</view>
+                            <view class='fs26 fc-6 f-1 tr pr20'>清款：983.00</view>
+                            <image src='../../img/direction.png' class='img-2'></image>
+                        </view>
+                    </navigator>
+                    <navigator url='record' class='bc-1'>
+                        <view class='fbc pr bb lh3 ml30 pr30 pt10 pb10'>
+                            <view class='fs26 fc-3 f-2'>2018-03-01 16:12</view>
+                            <view class='fs26 fc-6 f-1 tr pr20'>清款：1983.00</view>
+                            <image src='../../img/direction.png' class='img-2'></image>
+                        </view>
+                    </navigator>
+                </block>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+    <!--底部按钮  -->
+    <view class='palb fbc lh3 tc'>
+        <view class='bc-1 fs30 fc-6 f-2 ellipsis'>
+            挂账金额：18274.09
+        </view>
+        <view class='bc-5 fs30 fc f-1' bindtap='CuiKuan'>
+            催收
+        </view>
+        <view class='bc-3 fs30 fc f-1' bindtap='QingKuan' data-type='all'>
+            清款
+        </view>
+    </view>
+    <!--清款弹出层  -->
+    <view class='mask_box' wx:if="{{IsShowQingKun}}">
+        <view class='mask' bindtap='CanlerHandler'></view>
+        <view class='palt bc-1 br5 m30'>
+            <view class='center tc p30 mt30'>
+                <view class='fs24 fc-3'wx:if="{{IsShowDingDan}}">订单编号：201810071102100</view>
+                <view class='fs36 lh2 mb20'>挂账总金额：
+                    <text class='fs36 lh3 fc-6'>123934.90</text> </view>
+                <view class='qingkun lh25 p10 mb10 {{IsActive?"active":""}}'>
+                    <view class='fsc bc-1  br5 {{IsActive?"border":"border2"}}'>
+                        <view class='fs26 pl10'>清款金额</view>
+                        <input type='number' placeholder='0.0' value='{{money}}' focus bindfocus='FocusHandler' bindblur='BlurHandler' class='fs26' maxlength='10' bindinput='{{GetValue}}' value='{{value}}' class='f-1 tl pl10'></input>
+                        <view class='fc-6 fs22 pr10' bindtap='AllQingKun'>全部清款</view>
+                    </view>
+                </view>
+                <view class='qingkun lh25 p10 mb10  {{IsActive2?"active":""}}'>
+                    <view class='fsc bc-1  br5 {{IsActive2?"border":"border2"}}'>
+                        <view class='fs26 pl10 mr10'>备注信息</view>
+                        <input type='text' placeholder='' value='{{}}' bindfocus='FocusHandler2'bindblur='BlurHandler2' class='fs26' maxlength='20' class='f-1 tl pl10'></input>
+                    </view>
+                </view>
+            </view>
+            <view class='fsc lh3 mt20 bt tc'>
+                <view class='fs36 f-1 br' bindtap='CanlerHandler'>取消</view>
+                <view class='fs36 fc-6 f-1' bindtap='ConfrimHandler'>确定</view>
+            </view>
+        </view>
+    </view>
+    <!--催款弹出层  -->
+    <view class='mask_box' wx:if="{{IsShowCuiKun}}">
+        <view class='mask' bindtap='CanlerHandler'></view>
+        <view class='palb cuikun_box'>
+            <view class='fsc mb30' bindtap='CallPhone' data-phone='12346578910'>
+                <image src='../../img/kh_ico_1.png' class='img-3 mr20'></image>
+                <view class='fs30 fc tc'>电话催款</view>
+            </view>
+            <view class='fsc tc mt10'>
+                <image src='../../img/kh_ico_2.png' class='img-3 mr20'></image>
+                <view class='fs30 fc'>短信催款</view>
+            </view>
+        </view>
+    </view>
+    <!-- 筛选弹出层  -->
+    <view class='slot_box bc-1 palt' wx:if="{{IsShowSlot}}">
+        <view class='tab_box fsc bc-1 lh2 tc pt10 pb10 bb'>
+            <view class='f-2 fac'>
+                <view bindtap='ShowTab' data-tabindex='0' class='fc-3 fs30 {{tabIndex=="0"?"active":""}}'>交易订单</view>
+                <view bindtap='ShowTab' data-tabindex='1' class='fc-3 fs30 mr30 {{tabIndex=="1"?"active":""}}'>清款记录</view>
+            </view>
+            <view class='pr30 bl' bindtap='CanlerHandler'>
+                <view class='fc-3 fs30 ml30 fc-6'>筛选 </view>
+            </view>
+        </view>
+        <view class='bc-2 lh2 fs24 fc-3 pl30'>交易时间</view>
+        <view class='fbc btn_box bc-1 tc'>
+            <view class='f-1 fs24 active'>今天</view>
+            <view class='f-1 fs24 mr30 ml30'>昨天</view>
+            <view class='f-1 fs24'>本月</view>
+        </view>
+        <view class='bc-2 lh2 fs24 fc-3 pl30'>其他时间</view>
+        <view class='fbc bb p30 bc-1'>
+            <view class='f-1 fc-1 tl fs26'>开始时间</view>
+            <picker class='f-1' mode="date" value="{{startDate}}" fields="day" bindchange="bindStartDateChange">
+                <view class='fac'>
+                    <view class="picker fs24 f-1 tr">
+                        {{startDate}}
+                    </view>
+                    <image src='../../img/direction.png' class='img-2'></image>
+                </view>
+            </picker>
+        </view>
+        <view class='fbc p30 bb bc-1'>
+            <view class='f-3 fc-1 tl fs26'>结束时间</view>
+            <picker class='f-1' mode="date" value="{{endDate}}" fields="day" bindchange="bindEndDateChange">
+                <view class='fac'>
+                    <view class="picker fs24 f-1 tr">
+                        {{endDate}}
+                    </view>
+                    <image src='../../img/direction.png' class='img-2'></image>
+                </view>
+            </picker>
+        </view>
+        <view class='bc-2 lh2 fs24 fc-3 pl30'>收款方式</view>
+        <view class='fbc btn_box bc-1 tc'>
+            <view class='f-1 fs24 fsc mr20 active'>
+                <image src='../../img/xianjin.png' class='img-4 ml20'></image>现金</view>
+            <view class='f-1 fs24 fsc mr20'>
+                <image src='../../img/weixin.png' class='img-4 ml20'></image>微信</view>
+            <view class='f-1 fs24 fsc mr20'>
+                <image src='../../img/zhifubao.png' class='img-4 ml20'></image>支付宝</view>
+            <view class='f-1 fs24 fsc '>
+                <image src='../../img/yinlian.png' class='img-4 ml20'></image>银联</view>
+        </view>
+        <view class='bc-2 lh2 fs24 fc-3 pl30'>交易状态</view>
+        <view class='fbc btn_box bc-1 tc'>
+            <view class='f-1 fs24 active'>交易成功</view>
+            <view class='f-1 fs24 mr30 ml30'>交易失败</view>
+        </view>
+        <view class='bc-2 lh2 fs24 fc-3 pl30'>开单人员</view>
+        <view class='fbc btn_box bc-1 tc'>
+            <view class='f-1 fs24 active'>小A</view>
+            <view class='f-1 fs24 mr30 ml30'>小B</view>
+        </view>
+        <view class='palb lh3 bc-1 fac'>
+            <view class='f-3 bc-1 pl30 fs26' bindtap='CanlerHandler'>重置筛选</view>
+            <view class='f-1 bc-3 fc lh3 tc fs36' bindtap='OKHandler'>完成</view>
+        </view>
+    </view>
+</view>

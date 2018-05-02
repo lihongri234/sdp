@@ -1,0 +1,284 @@
+<!--pages/kucun/ruku2.wxml-->
+<view class='container bc-1'>
+
+  <!--商品列表 start-->
+  <view class='fbw'>
+    <view class='f-2'>
+      <view class='searchFor p20 bc-2'>
+        <view class='lh2 fbc bc-1 br5' bindtap='ShowSearch'>
+          <view class='f-1 tr mr10'>
+            <image src='../../img/search.png' class='img-1'></image>
+          </view>
+          <view class='f-2'>
+            <input type='text' class='fs26 fc-3 lh2' placeholder='商品搜索' bindfocus='SearchHandler'></input>
+          </view>
+        </view>
+      </view>
+      <view class='goodslist'>
+        <view class='goodsitem atvice1 ' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包][样品] [第二行]</view>
+          <view class='money'></view>
+        </view>
+        <view class='goodsitem atvice2 ' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包]</view>
+          <view class='money'>3.90x99=￥12266.10</view>
+        </view>
+        <view class='goodsitem ' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包]</view>
+          <view class='money'>3.90x99=￥12266.10</view>
+        </view>
+        <view class='goodsitem' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包]</view>
+          <view class='money'>3.90x99=￥12266.10</view>
+        </view>
+
+        <view class='goodsitem' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包]</view>
+          <view class='money'>3.90x99=￥12266.10</view>
+        </view>
+        <view class='goodsitem' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包]</view>
+          <view class='money'>3.90x99=￥12266.10</view>
+        </view>
+        <view class='goodsitem' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包]</view>
+          <view class='money'>3.90x99=￥12266.10</view>
+        </view>
+        <view class='goodsitem' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包]</view>
+          <view class='money'>3.90x99=￥12266.10</view>
+        </view>
+        <view class='goodsitem' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包]</view>
+          <view class='money'>3.90x99=￥12266.10</view>
+        </view>
+        <view class='goodsitem' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包]</view>
+          <view class='money'>3.90x99=￥12266.10</view>
+        </view>
+        <view class='goodsitem' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包]</view>
+          <view class='money'>3.90x99=￥12266.10</view>
+        </view>
+        <view class='goodsitem' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包]</view>
+          <view class='money'>3.90x99=￥12266.10</view>
+        </view>
+        <view class='goodsitem' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包]</view>
+          <view class='money'>3.90x99=￥12266.10</view>
+        </view>
+        <view class='goodsitem' bindtap='selectGoods'>
+          <view class='name'>新疆小核桃</view>
+          <view class='desc'>[80][吐鲁番][2kg/包]</view>
+          <view class='money'>3.90x99=￥12266.10</view>
+        </view>
+       
+      </view>
+
+    </view>
+    <view class='kaidanBody f-3 bc-1'>
+      <view class='sumMoney'>
+        <view class='fs38 fc-2'>入库总金额</view>
+        <view class='fs30 fc-1'>0.00</view>
+      </view>
+      <view class='bc-100 p10 pl20 fc-6 fs24'>提示：录入成本价可生成利润报表</view>
+      <view class='orderPrice p10 bc-2  {{Isatvice==1?"atvice":""}} '>
+        <view class='fsc br5 p10 bc-1 fc-3 b2'>
+          <view class='f-1'>成本单价</view>
+          <input class='f-2' value='{{PriceStr}}' data-id='1' bindfocus='FocusHandler'></input>
+        </view>
+      </view>
+      <view class='orderQuantity p10 bc-2 {{Isatvice==2?"atvice":""}}'>
+        <view class='fsc br5 p10 bc-1 fc-3 b2'>
+          <view class='f-1'>入库数量</view>
+          <input class='f-2' value='{{QuantityStr}}' data-id='2' bindfocus='FocusHandler'></input>
+        </view>
+      </view>
+      <!--数字键盘  start-->
+      <view class='keyboard'>
+        <image src='../../img/k7.png' data-num='7' bindtap='NumberClick'></image>
+        <image src='../../img/k8.png' data-num='8' bindtap='NumberClick'></image>
+        <image src='../../img/k9.png' data-num='9' bindtap='NumberClick'></image>
+        <image src='../../img/k4.png' data-num='4' bindtap='NumberClick'></image>
+        <image src='../../img/k5.png' data-num='5' bindtap='NumberClick'></image>
+        <image src='../../img/k6.png' data-num='6' bindtap='NumberClick'></image>
+        <image src='../../img/k1.png' data-num='1' bindtap='NumberClick'></image>
+        <image src='../../img/k2.png' data-num='2' bindtap='NumberClick'></image>
+        <image src='../../img/k3.png' data-num='3' bindtap='NumberClick'></image>
+        <image src='../../img/kdian.png' data-num='.' bindtap='NumberClick'></image>
+        <image src='../../img/k0.png' data-num='0' bindtap='NumberClick'></image>
+        <image src='../../img/kdel.png' data-num='del' bindtap='NumberClick'></image>
+        <audio id='numAudio' src='{{audioUrl}}'></audio>
+      </view>
+      <!--数字键盘 end-->
+    </view>
+  </view>
+  <!--商品列表 end-->
+
+  <view class='btn-next' bindtap='ShowConfirmStorage'>下一步</view>
+
+  <!--搜索列表 start-->
+  <view class='model mask pt20 SearchModel' wx:if='{{IsSearch}}'>
+    <view class='model-body bc-1 br5'>
+      <view class='p20 fsc bb'>
+        <view class='f-1' bindtap='HiedwSearch'>关闭</view>
+        <input class='f-2' type='text' placeholder='请输入商品名称/编号'></input>
+        <view class='f-1 tr'>搜索</view>
+      </view>
+      <view class='list' style='height:100%;'>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+            <view class='p20 bb fc-1 fs30'>茶位费/位</view>
+      </view>
+    </view>
+  </view>
+  <!--搜索列表 end-->
+
+<!--确认入库 start-->
+<view class='mask model' wx:if='{{IsConfirmStorage}}'>
+  <view class='confirmStorage'>
+     <view class='fsc bc-6  fc'>
+      <view class='f-3 p20 tl'>商品</view>
+      <view class='f-2 p20 tc'>入库数量</view>
+      <view class='f-1 p20 tr'>成本价</view>
+     </view>
+     <view class='list p10 bc-1'>
+        <view class='fsc item'>
+          <view class='f-3 tl p20'>
+            <view class='name'>新疆小核桃</view>
+            <view class='desc'>[80][吐鲁番][2kg/包][样品] [第二行]</view>
+            <view class='money'></view>
+          </view>
+          <view class='f-2 fc-6 tc p20'>99</view>
+          <view class='f-1 fc-2 tr p20'>￥99.23</view>
+        </view>
+        <view class='fsc item'>
+          <view class='f-3 tl p20'>
+            <view class='name'>新疆小核桃</view>
+            <view class='desc'>[80][吐鲁番][2kg/包][样品] [第二行]</view>
+            <view class='money'></view>
+          </view>
+          <view class='f-2 fc-6 tc p20'>99</view>
+          <view class='f-1 fc-2 tr p20'>￥99.23</view>
+        </view>
+        <view class='fsc item'>
+          <view class='f-3 tl p20'>
+            <view class='name'>新疆小核桃</view>
+            <view class='desc'>[80][吐鲁番][2kg/包][样品] [第二行]</view>
+            <view class='money'></view>
+          </view>
+          <view class='f-2 fc-6 tc p20'>99</view>
+          <view class='f-1 fc-2 tr p20'>￥99.23</view>
+        </view>
+        <view class='fsc item'>
+          <view class='f-3 tl p20'>
+            <view class='name'>新疆小核桃</view>
+            <view class='desc'>[80][吐鲁番][2kg/包][样品] [第二行]</view>
+            <view class='money'></view>
+          </view>
+          <view class='f-2 fc-6 tc p20'>99</view>
+          <view class='f-1 fc-2 tr p20'>￥99.23</view>
+        </view>
+        <view class='fsc item'>
+          <view class='f-3 tl p20'>
+            <view class='name'>新疆小核桃</view>
+            <view class='desc'>[80][吐鲁番][2kg/包][样品] [第二行]</view>
+            <view class='money'></view>
+          </view>
+          <view class='f-2 fc-6 tc p20'>99</view>
+          <view class='f-1 fc-2 tr p20'>￥99.23</view>
+        </view>
+        <view class='fsc item'>
+          <view class='f-3 tl p20'>
+            <view class='name'>新疆小核桃</view>
+            <view class='desc'>[80][吐鲁番][2kg/包][样品] [第二行]</view>
+            <view class='money'></view>
+          </view>
+          <view class='f-2 fc-6 tc p20'>99</view>
+          <view class='f-1 fc-2 tr p20'>￥99.23</view>
+        </view>
+        <view class='fsc item'>
+          <view class='f-3 tl p20'>
+            <view class='name'>新疆小核桃</view>
+            <view class='desc'>[80][吐鲁番][2kg/包][样品] [第二行]</view>
+            <view class='money'></view>
+          </view>
+          <view class='f-2 fc-6 tc p20'>99</view>
+          <view class='f-1 fc-2 tr p20'>￥99.23</view>
+        </view>
+        <view class='fsc item'>
+          <view class='f-3 tl p20'>
+            <view class='name'>新疆小核桃</view>
+            <view class='desc'>[80][吐鲁番][2kg/包][样品] [第二行]</view>
+            <view class='money'></view>
+          </view>
+          <view class='f-2 fc-6 tc p20'>99</view>
+          <view class='f-1 fc-2 tr p20'>￥99.23</view>
+        </view>
+        <view class='fsc item'>
+          <view class='f-3 tl p20'>
+            <view class='name'>新疆小核桃</view>
+            <view class='desc'>[80][吐鲁番][2kg/包][样品] [第二行]</view>
+            <view class='money'></view>
+          </view>
+          <view class='f-2 fc-6 tc p20'>99</view>
+          <view class='f-1 fc-2 tr p20'>￥99.23</view>
+        </view>
+        <view class='fsc item'>
+          <view class='f-3 tl p20'>
+            <view class='name'>新疆小核桃</view>
+            <view class='desc'>[80][吐鲁番][2kg/包][样品] [第二行]</view>
+            <view class='money'></view>
+          </view>
+          <view class='f-2 fc-6 tc p20'>99</view>
+          <view class='f-1 fc-2 tr p20'>￥99.23</view>
+        </view>
+        <view class='fsc item'>
+          <view class='f-3 tl p20'>
+            <view class='name'>新疆小核桃</view>
+            <view class='desc'>[80][吐鲁番][2kg/包][样品] [第二行]</view>
+            <view class='money'></view>
+          </view>
+          <view class='f-2 fc-6 tc p20'>99</view>
+          <view class='f-1 fc-2 tr p20'>￥99.23</view>
+        </view>
+     </view>
+     <view class='bc-100 p10 pl20 fc-6 fs24 tr'>入库总：￥999999999 (7个品种)</view>
+     <view class='fsc'>
+        <view class='btn btn-cancel' bindtap='HiedConfirmStorage'>取消</view>
+        <view class='btn btn-confirm' bindtap='ConfirmStorage'>确认</view>
+     </view>
+  </view>
+</view>
+ <!--确认入库 end-->
+</view>
